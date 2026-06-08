@@ -1,0 +1,260 @@
+## STEP 1 - R&D, Architecture Planning & Requirement Analysis
+
+Timeline:
+27 May 2026 → 02 Jun 2026 (5 Working Days)
+
+Scope:
+
+* Understand RAG architecture and workflow
+* Research enterprise document intelligence systems
+* Analyze embeddings, vector databases, and retrieval pipelines
+* Finalize technology stack
+* Design metadata schema for citations and retrieval
+* Prepare architecture and SDLC documentation
+
+Breakdown:
+27 May 2026
+
+* RAG architecture research
+* Research paper analysis
+
+28 May 2026
+
+* Enterprise RAG workflow analysis
+* Metadata schema planning
+
+29 May 2026
+
+* Tech stack evaluation
+* Embedding and vector DB comparison
+
+02 Jun 2026
+
+* Documentation preparation
+
+Deliverables:
+
+* Finalized architecture flow
+* Technology stack selection
+* Metadata schema design
+* SDLC planning document
+* R&D documentation
+
+Completion Target:
+02 June 2026
+
+=============================================================
+
+## STEP 2 - Environment Setup & Project Initialization
+
+Timeline:
+03 Jun 2026 → 06 Jun 2026 (4 Working Days)
+
+Scope:
+
+* Setup Python virtual environment
+* Install required dependencies
+* Configure Streamlit project
+* Setup FastAPI backend structure
+* Configure Gemini API access
+* Setup repository and folder structure
+
+Breakdown:
+03 Jun 2026
+
+* Python virtual environment setup
+* Dependency installation
+
+04 Jun 2026
+
+* Streamlit project scaffolding
+* FastAPI backend setup
+
+05 Jun 2026
+
+* Gemini API configuration
+* Environment variable management
+
+06 Jun 2026
+
+* Repository cleanup
+* Folder structure organization
+* Local environment validation
+
+Deliverables:
+
+* Initialized project structure
+* Working local development environment
+* Configured API integration setup
+
+Completion Target:
+06 June 2026
+
+=============================================================
+
+## STEP 3 - Document Upload & Text Extraction Pipeline
+
+Timeline:
+09 Jun 2026 → 12 Jun 2026 (4 Working Days)
+
+Scope:
+
+* Build PDF/TXT upload functionality
+* Integrate PyPDF2 extraction pipeline
+* Extract page-level text from documents
+* Validate extracted content
+* Handle upload errors and unsupported files
+
+Breakdown:
+09 Jun 2026
+
+* Streamlit upload module implementation
+
+10 Jun 2026
+
+* PDF extraction pipeline using PyPDF2
+
+11 Jun 2026
+
+* TXT file handling
+* Page tracking integration
+
+12 Jun 2026
+
+* Error handling
+* Extraction validation & testing
+
+Deliverables:
+
+* Working document upload pipeline
+* Page-aware text extraction system
+
+Completion Target:
+12 June 2026
+
+=============================================================
+
+## STEP 4 - Chunking & Metadata Enrichment Pipeline
+
+Timeline:
+13 Jun 2026 → 18 Jun 2026 (4 Working Days)
+
+Scope:
+
+* Implement recursive semantic-preserving chunking
+* Configure chunk overlap handling
+* Generate metadata for each chunk
+* Attach source file and page details
+* Validate chunk continuity and structure
+
+Breakdown:
+13 Jun 2026
+
+* Recursive chunking implementation
+
+16 Jun 2026
+
+* Chunk overlap optimization
+* Chunk size tuning
+
+17 Jun 2026
+
+* Metadata schema integration
+* Source/page/chunk ID attachment
+
+18 Jun 2026
+
+* Chunk validation
+* Semantic continuity testing
+
+Deliverables:
+
+* Recursive chunking pipeline
+* Metadata-aware chunk structure
+
+Completion Target:
+18 June 2026
+
+=============================================================
+
+## STEP 5 - Embedding Generation & Vector Database Integration
+
+Timeline:
+19 Jun 2026 → 24 Jun 2026 (4 Working Days)
+
+Scope:
+
+* Integrate multi-qa-MiniLM-L6-cos-v1 embedding model
+* Generate embeddings for document chunks
+* Setup ChromaDB vector storage
+* Store embeddings with metadata
+* Implement persistent local storage
+
+Breakdown:
+19 Jun 2026
+
+* Embedding model integration
+
+20 Jun 2026
+
+* Embedding generation pipeline
+
+23 Jun 2026
+
+* ChromaDB setup
+* Metadata storage integration
+
+24 Jun 2026
+
+* Persistence testing
+* Vector storage validation
+
+Deliverables:
+
+* Working embedding pipeline
+* ChromaDB integration
+* Metadata-aware vector storage
+
+Completion Target:
+24 June 2026
+
+=============================================================
+
+## STEP 6 - Retrieval Pipeline & Semantic Search
+
+Timeline:
+25 Jun 2026 → 30 Jun 2026 (4 Working Days)
+
+Scope:
+
+* Convert user questions into embeddings
+* Implement top-k semantic retrieval
+* Retrieve chunks with metadata
+* Optimize similarity search
+* Validate retrieval quality
+
+Breakdown:
+25 Jun 2026
+
+* Question embedding pipeline
+
+26 Jun 2026
+
+* Semantic retrieval logic
+
+27 Jun 2026
+
+* Top-k retrieval optimization
+* Metadata-aware retrieval
+
+30 Jun 2026
+
+* Retrieval testing & tuning
+
+Deliverables:
+
+* Semantic retrieval system
+* Metadata-aware search pipeline
+
+Completion Target:
+30 June 2026

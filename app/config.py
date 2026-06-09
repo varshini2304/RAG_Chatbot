@@ -1,9 +1,4 @@
-"""Centralized configuration for the Internal Document RAG Chatbot.
 
-This module loads environment variables and exposes typed settings for paths,
-model names, and service credentials. Future modules should depend on this
-configuration layer instead of reading environment variables directly.
-"""
 
 from __future__ import annotations
 
@@ -19,7 +14,6 @@ load_dotenv(PROJECT_ROOT / ".env")
 
 @dataclass(frozen=True)
 class Settings:
-    """Application settings loaded from environment variables and defaults."""
 
     app_name: str = "Internal Document RAG Chatbot"
     environment: str = os.getenv("APP_ENV", "development")
@@ -29,6 +23,8 @@ class Settings:
     upload_dir: Path = PROJECT_ROOT / "data" / "uploads"
     chroma_db_dir: Path = PROJECT_ROOT / "data" / "chroma_db"
     sample_docs_dir: Path = PROJECT_ROOT / "sample_docs"
+    max_upload_size_mb: int = int(os.getenv("MAX_UPLOAD_SIZE_MB", "10"))
+    allowed_upload_extensions: tuple[str, ...] = ("pdf",)
 
 
 settings = Settings()

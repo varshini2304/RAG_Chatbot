@@ -1,9 +1,11 @@
-#Day 1
+"""Streamlit entry point for the Internal Document RAG Chatbot."""
+
 from __future__ import annotations
 
 import streamlit as st
 
 from app.config import settings
+from app.ui.streamlit_ui import render_upload_workspace
 
 
 def render_banner() -> None:
@@ -14,18 +16,8 @@ def render_banner() -> None:
     )
 
 
-def render_upload_placeholder() -> None:
-    st.subheader("Document Upload")
-    st.file_uploader(
-        "Upload internal documents",
-        type=["pdf", "txt", "md", "docx"],
-        accept_multiple_files=True,
-        disabled=True,
-        help="Document ingestion will be implemented in a future SDLC step.",
-    )
-
-
 def main() -> None:
+    """Run the Streamlit application."""
     st.set_page_config(
         page_title=settings.app_name,
         page_icon=":material/description:",
@@ -33,8 +25,8 @@ def main() -> None:
     )
 
     render_banner()
-    render_upload_placeholder()
-    st.info("Step 2 - Project Initialization Completed")
+    st.caption("Phase: Day 1 - PDF Upload & Extraction")
+    render_upload_workspace()
 
 
 if __name__ == "__main__":

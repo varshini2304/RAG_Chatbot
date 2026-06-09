@@ -61,6 +61,3 @@ def test_text_loader_rejects_empty_txt_file(tmp_path: Path) -> None:
     with pytest.raises(ExtractionError, match="TXT file is empty"):
         TextLoader().extract(text_path)
 
-#if any other extraction tests are needed, they can be added here so that the image as well as other file types can be tested for extraction.
-
-#i'm changing the commit deatils and also making it show my name instead

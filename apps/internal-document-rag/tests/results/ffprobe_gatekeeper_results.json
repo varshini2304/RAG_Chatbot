@@ -1,0 +1,311 @@
+{
+  "timestamp": "2026-09-03 10:24:52",
+  "scope": "ffprobe Metadata Validation & Validation Gatekeeper",
+  "status": "Implementation complete; validation complete except genuine unsupported-codec fixture coverage.",
+  "environment": {
+    "python": "3.11.0",
+    "pyav": "18.1.0",
+    "ffprobe": "ffprobe version 9.0-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "group_a_ffprobe_comparison": [
+    {
+      "input_file": "test_instructional_normal.mp4",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_sec": 456.62,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "ground_truth": {
+        "codec": "h264",
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_sec": 456.62,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.1341,
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "const_01.mp4",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "duration_sec": 545.12,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "ground_truth": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "duration_sec": 545.12,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.1368,
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "Working on machine.mp4",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "duration_sec": 545.12,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "ground_truth": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "duration_sec": 545.12,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.1394,
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "Working_on_machine_noisy.mp4",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "duration_sec": 545.12,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "ground_truth": {
+        "codec": "h264",
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "duration_sec": 545.12,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.32,
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "vp9",
+        "width": 320,
+        "height": 240,
+        "fps": 29.97,
+        "duration_sec": 220.294,
+        "container_format": "matroska,webm"
+      },
+      "ground_truth": {
+        "codec": "vp9",
+        "width": 320,
+        "height": 240,
+        "fps": 29.97,
+        "duration_sec": 220.294,
+        "container_format": "matroska,webm"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.2485,
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "controlled_vfr_test.mp4",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_sec": 456.62,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "ground_truth": {
+        "codec": "h264",
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_sec": 456.62,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.2398,
+      "result": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "controlled_synthetic_corrupt.mp4",
+      "exists": true,
+      "extracted_metadata": {
+        "codec": "h264",
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_sec": 456.633,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "ground_truth": {
+        "codec": "h264",
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_sec": 456.633,
+        "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+      },
+      "field_matches": {
+        "codec": true,
+        "width": true,
+        "height": true,
+        "fps": true,
+        "duration_sec": true,
+        "container_format": true
+      },
+      "all_fields_match": true,
+      "gatekeeper_passed": true,
+      "rejection_reason": null,
+      "elapsed_sec": 0.2347,
+      "result": "PASS",
+      "notes": "Container header intact; ffprobe reads valid metadata. Bitstream corruption is in audio stream at 136s (evaluated in Phase 3)."
+    }
+  ],
+  "group_b_unsupported_codec": {
+    "test": "Config-Restricted Codec Exclusion Test (Simulated Unsupported Codec)",
+    "input_file": "const_01.mp4",
+    "input_codec": "h264",
+    "allowed_codecs": [
+      "vp9"
+    ],
+    "gatekeeper_rejected": true,
+    "rejection_reason": "Unsupported video codec 'h264'. Supported codecs are: vp9.",
+    "downstream_blocked": true,
+    "genuine_unsupported_fixture_tested": false,
+    "fixture_gap_note": "Awaiting addition of a genuine non-h264/non-vp9 media fixture (e.g., HEVC or ProRes).",
+    "result": "PASS (Enforcement verified; genuine fixture pending)"
+  },
+  "group_c_invalid_corrupt": [
+    {
+      "case": "Missing file",
+      "target": "non_existent_clip_9999.mp4",
+      "rejected": true,
+      "rejection_reason": "Video file not found: non_existent_clip_9999.mp4",
+      "downstream_prevented": true,
+      "elapsed_sec": 0.0004,
+      "result": "PASS"
+    },
+    {
+      "case": "Empty (0-byte) file",
+      "target": "tmpywmb1fnx.mp4",
+      "rejected": true,
+      "rejection_reason": "Video file is empty (0 bytes): tmpywmb1fnx.mp4",
+      "downstream_prevented": true,
+      "elapsed_sec": 0.0007,
+      "result": "PASS"
+    },
+    {
+      "case": "Truncated header MP4",
+      "target": "tmp8440p9q6.mp4",
+      "rejected": true,
+      "rejection_reason": "Corrupt or unreadable media container: tmp8440p9q6.mp4",
+      "downstream_prevented": true,
+      "elapsed_sec": 0.08507,
+      "result": "PASS"
+    },
+    {
+      "case": "Non-video PDF document",
+      "target": "milling_machine_operating_manual.pdf",
+      "rejected": true,
+      "rejection_reason": "Corrupt or unreadable media container: milling_machine_operating_manual.pdf",
+      "downstream_prevented": true,
+      "elapsed_sec": 0.07003,
+      "result": "PASS"
+    },
+    {
+      "case": "Directory path",
+      "target": "videos",
+      "rejected": true,
+      "rejection_reason": "Target is not a valid file: videos",
+      "downstream_prevented": true,
+      "elapsed_sec": 0.00032,
+      "result": "PASS"
+    }
+  ]
+}

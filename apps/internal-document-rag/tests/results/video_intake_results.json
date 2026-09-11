@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-09-03 10:24:42",
+  "scope": "Video Stream Intake & Demuxing Validation",
+  "environment": {
+    "python": "3.11.0",
+    "pyav": "18.1.0",
+    "ffprobe": "ffprobe version 9.0-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "video_tests": [
+    {
+      "input_file": "test_instructional_normal.mp4",
+      "format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 456.62,
+      "resolution": "640x360",
+      "codec": "h264",
+      "elapsed_sec": 0.0217
+    },
+    {
+      "input_file": "const_01.mp4",
+      "format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 545.12,
+      "resolution": "640x480",
+      "codec": "h264",
+      "elapsed_sec": 0.0161
+    },
+    {
+      "input_file": "Working on machine.mp4",
+      "format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 545.12,
+      "resolution": "640x480",
+      "codec": "h264",
+      "elapsed_sec": 0.0176
+    },
+    {
+      "input_file": "Working_on_machine_noisy.mp4",
+      "format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 545.12,
+      "resolution": "640x480",
+      "codec": "h264",
+      "elapsed_sec": 0.0096
+    },
+    {
+      "input_file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "format": "matroska,webm",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 220.29,
+      "resolution": "320x240",
+      "codec": "vp9",
+      "elapsed_sec": 0.0066
+    },
+    {
+      "input_file": "controlled_vfr_test.mp4",
+      "format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 456.62,
+      "resolution": "640x360",
+      "codec": "h264",
+      "elapsed_sec": 0.0184
+    },
+    {
+      "input_file": "controlled_synthetic_corrupt.mp4",
+      "format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "vfr": "No",
+      "opened": "Yes",
+      "decoded": "Yes",
+      "metadata_extracted": "Yes",
+      "error": "None",
+      "result": "PASS",
+      "duration_sec": 456.63,
+      "resolution": "640x360",
+      "codec": "h264",
+      "elapsed_sec": 0.0171
+    }
+  ],
+  "error_tests": [
+    {
+      "test_case": "Missing file",
+      "target": "non_existent_fixture.mp4",
+      "expected": "InvalidInputError",
+      "actual": "InvalidInputError",
+      "message": "Input video file does not exist: non_existent_fixture.mp4",
+      "status": "PASS (Typed)"
+    },
+    {
+      "test_case": "Directory path",
+      "target": "videos",
+      "expected": "InvalidInputError",
+      "actual": "InvalidInputError",
+      "message": "Input target is not a regular file: videos",
+      "status": "PASS (Typed)"
+    },
+    {
+      "test_case": "PDF Document",
+      "target": "milling_machine_operating_manual.pdf",
+      "expected": [
+        "UnsupportedContainerError",
+        "CorruptMediaError"
+      ],
+      "actual": "CorruptMediaError",
+      "message": "Media container is corrupt or truncated: [Errno 1094995529] Invalid data found when processing input: 'D:\\\\company_projects\\\\RAG_Chatbot\\\\RND\\\\02_docs_and_video\\\\milling_machine_operating_manual.pdf'",
+      "status": "PASS (Typed)"
+    }
+  ]
+}

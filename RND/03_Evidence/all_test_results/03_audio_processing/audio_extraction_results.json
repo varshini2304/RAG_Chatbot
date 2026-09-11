@@ -1,0 +1,461 @@
+{
+  "row": 3,
+  "name": "Audio Extraction & Resampling",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "D:\\company_projects\\RAG_Chatbot\\venv\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-24T09:58:49.355671+00:00"
+  },
+  "results": [
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "container_duration_sec": 545.12,
+      "candidate": "FFmpeg CLI",
+      "version": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 1.1655,
+      "timings": [
+        1.0628,
+        1.0944,
+        1.3394
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 8721749,
+        "duration_sec": 545.109,
+        "file_size_bytes": 17443576,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "container_duration_sec": 545.12,
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 2.1891,
+      "timings": [
+        2.567,
+        2.1129,
+        1.8873
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 8721749,
+        "duration_sec": 545.109,
+        "file_size_bytes": 17443542,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "container_duration_sec": 545.12,
+      "candidate": "SoundFile",
+      "version": "0.14.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.0151,
+      "timings": [
+        0.0172,
+        0.0123,
+        0.0159
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "duration_sec": 545.109,
+        "num_frames": 8721749,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "note": "SoundFile reads pre-extracted WAV (FFmpeg); measures read+parse latency only",
+      "errors": []
+    },
+    {
+      "file": "controlled_synthetic_corrupt.mp4",
+      "sha256_prefix": "aedc1548e7263fea",
+      "container_duration_sec": 456.633,
+      "candidate": "FFmpeg CLI",
+      "version": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "status": "FAIL — REAL TESTED",
+      "avg_sec": 0.3599,
+      "timings": [
+        0.3325,
+        0.3438,
+        0.4035
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 2181190,
+        "duration_sec": 136.324,
+        "file_size_bytes": 4362458,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": false,
+      "errors": [
+        "Duration mismatch: extracted 136.324s vs container 456.633s"
+      ]
+    },
+    {
+      "file": "controlled_synthetic_corrupt.mp4",
+      "sha256_prefix": "aedc1548e7263fea",
+      "container_duration_sec": 456.633,
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "FAIL — REAL TESTED",
+      "avg_sec": 0.4872,
+      "timings": [
+        0.6223,
+        0.4294,
+        0.4098
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 2181190,
+        "duration_sec": 136.324,
+        "file_size_bytes": 4362424,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": false,
+      "errors": [
+        "Duration mismatch: PyAV decoded 136.324s vs container 456.633s (+-320.3s)"
+      ]
+    },
+    {
+      "file": "controlled_synthetic_corrupt.mp4",
+      "sha256_prefix": "aedc1548e7263fea",
+      "container_duration_sec": 456.633,
+      "candidate": "SoundFile",
+      "version": "0.14.0",
+      "status": "FAIL — REAL TESTED",
+      "avg_sec": 0.0046,
+      "timings": [
+        0.0065,
+        0.004,
+        0.0033
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "duration_sec": 136.324,
+        "num_frames": 2181190,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": false,
+      "note": "SoundFile reads pre-extracted WAV (FFmpeg); measures read+parse latency only",
+      "errors": []
+    },
+    {
+      "file": "controlled_vfr_test.mp4",
+      "sha256_prefix": "ac6fe66c4a164dda",
+      "container_duration_sec": 456.62,
+      "candidate": "FFmpeg CLI",
+      "version": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.6979,
+      "timings": [
+        0.6857,
+        0.7137,
+        0.6943
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 7305927,
+        "duration_sec": 456.62,
+        "file_size_bytes": 14611932,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "controlled_vfr_test.mp4",
+      "sha256_prefix": "ac6fe66c4a164dda",
+      "container_duration_sec": 456.62,
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 1.2582,
+      "timings": [
+        1.3159,
+        1.0646,
+        1.394
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 7305927,
+        "duration_sec": 456.62,
+        "file_size_bytes": 14611898,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "controlled_vfr_test.mp4",
+      "sha256_prefix": "ac6fe66c4a164dda",
+      "container_duration_sec": 456.62,
+      "candidate": "SoundFile",
+      "version": "0.14.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.0101,
+      "timings": [
+        0.0123,
+        0.0098,
+        0.0082
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "duration_sec": 456.62,
+        "num_frames": 7305927,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "note": "SoundFile reads pre-extracted WAV (FFmpeg); measures read+parse latency only",
+      "errors": []
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "container_duration_sec": 456.62,
+      "candidate": "FFmpeg CLI",
+      "version": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.8536,
+      "timings": [
+        0.8373,
+        0.86,
+        0.8635
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 7305927,
+        "duration_sec": 456.62,
+        "file_size_bytes": 14611932,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "container_duration_sec": 456.62,
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 2.2888,
+      "timings": [
+        2.5119,
+        2.1471,
+        2.2074
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 7305927,
+        "duration_sec": 456.62,
+        "file_size_bytes": 14611898,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "container_duration_sec": 456.62,
+      "candidate": "SoundFile",
+      "version": "0.14.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.0298,
+      "timings": [
+        0.0358,
+        0.0294,
+        0.0243
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "duration_sec": 456.62,
+        "num_frames": 7305927,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "note": "SoundFile reads pre-extracted WAV (FFmpeg); measures read+parse latency only",
+      "errors": []
+    },
+    {
+      "file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "sha256_prefix": "1410a085f132f9a3",
+      "container_duration_sec": 220.294,
+      "candidate": "FFmpeg CLI",
+      "version": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 1.0207,
+      "timings": [
+        1.443,
+        0.8756,
+        0.7434
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 3524587,
+        "duration_sec": 220.287,
+        "file_size_bytes": 7049252,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "sha256_prefix": "1410a085f132f9a3",
+      "container_duration_sec": 220.294,
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 1.8031,
+      "timings": [
+        1.5605,
+        1.8482,
+        2.0005
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 3524587,
+        "duration_sec": 220.287,
+        "file_size_bytes": 7049218,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "sha256_prefix": "1410a085f132f9a3",
+      "container_duration_sec": 220.294,
+      "candidate": "SoundFile",
+      "version": "0.14.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.008,
+      "timings": [
+        0.0112,
+        0.0054,
+        0.0073
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "duration_sec": 220.287,
+        "num_frames": 3524587,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "note": "SoundFile reads pre-extracted WAV (FFmpeg); measures read+parse latency only",
+      "errors": []
+    },
+    {
+      "file": "Working on machine.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "container_duration_sec": 545.12,
+      "candidate": "FFmpeg CLI",
+      "version": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 1.1107,
+      "timings": [
+        1.0439,
+        1.1546,
+        1.1336
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 8721749,
+        "duration_sec": 545.109,
+        "file_size_bytes": 17443576,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "Working on machine.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "container_duration_sec": 545.12,
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 2.7043,
+      "timings": [
+        2.605,
+        2.9877,
+        2.5201
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "sample_width_bytes": 2,
+        "num_frames": 8721749,
+        "duration_sec": 545.109,
+        "file_size_bytes": 17443542,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "errors": []
+    },
+    {
+      "file": "Working on machine.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "container_duration_sec": 545.12,
+      "candidate": "SoundFile",
+      "version": "0.14.0",
+      "status": "PASS — REAL TESTED",
+      "avg_sec": 0.0118,
+      "timings": [
+        0.0148,
+        0.0095,
+        0.0112
+      ],
+      "wav_props": {
+        "channels": 1,
+        "sample_rate": 16000,
+        "duration_sec": 545.109,
+        "num_frames": 8721749,
+        "asr_compatible_16k_mono": true
+      },
+      "duration_match_within_2s": true,
+      "note": "SoundFile reads pre-extracted WAV (FFmpeg); measures read+parse latency only",
+      "errors": []
+    }
+  ]
+}

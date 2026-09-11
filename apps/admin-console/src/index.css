@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0B1020;
+    --bg-sidebar: #111827;
+    --bg-card: #161B2E;
+    --border-color: rgba(255, 255, 255, 0.06);
+    --primary: #6D5DF6;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+  }
+
+  html, body, #root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #0B1020;
+    color: #F8FAFC;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0B1020;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+/* Card & Component Utility Classes */
+.enterprise-card {
+  background-color: #161B2E;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.enterprise-card:hover {
+  border-color: rgba(109, 93, 246, 0.3);
+  box-shadow: 0 15px 35px -10px rgba(109, 93, 246, 0.15);
+}
+
+.glow-primary-btn {
+  background-color: #6D5DF6;
+  color: #FFFFFF;
+  border-radius: 14px;
+  transition: all 200ms ease;
+  box-shadow: 0 4px 20px rgba(109, 93, 246, 0.35);
+}
+
+.glow-primary-btn:hover {
+  background-color: #5b4be0;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(109, 93, 246, 0.5);
+}

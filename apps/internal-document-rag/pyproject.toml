@@ -1,0 +1,47 @@
+[tool.black]
+line-length = 88
+target-version = ['py310']
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.pytest_tmp
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | \.dist
+  | venv
+  | tmp
+  | data
+)/
+'''
+
+[tool.ruff]
+exclude = [
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".pytest_tmp",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    ".dist",
+    "venv",
+    "tmp",
+    "data",
+]
+
+[tool.mypy]
+exclude = "(tmp|venv|data|\\.dist|\\.pytest_tmp|\\.pytest_cache|\\.mypy_cache)"

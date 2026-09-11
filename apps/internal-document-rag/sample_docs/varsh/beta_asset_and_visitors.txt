@@ -1,0 +1,24 @@
+# Vanguard AutoTech Corp — Internal Document Segment
+Document ID: OPER-VAT-2026-V8.0-PART
+Confidentiality: Highly Restricted Internal
+
+## 14. Asset Management
+Vanguard assets include CNC machines, heavy stamping dies, laboratory test benches, and IT assets. All equipment is tagged with a metallic asset ID label (e.g., `VANG-ASSET-7002`). The removal of any tool, gauge, or equipment from the Detroit Industrial Park premises without an authorized gate pass signed by the Facilities Manager is a serious infraction and will be treated as theft.
+
+
+
+## 15. Laptop Policy
+Engineering laptops (predominantly Dell Precision Mobile Workstations loaded with CAD and FEA software) are provided to select engineering staff. Laptops must be secured in lockers when not in use. Employees must never connect personal USB flash drives or external storage to corporate laptops. USB ports are locked down by Group Policy and will flag unauthorized device insertions immediately to the IT Security team.
+
+
+
+## 16. Visitor Policy
+All visitors (including raw material vendors, equipment technicians, and client auditors) must be approved by the COO's office. Visitors must check-in at the security gate at Plant B, present a photo ID, and complete a safety briefing. Visitors will be issued steel-toed boot caps, safety glasses, and a temporary yellow badge. They must remain escorted by a Vanguard supervisor at all times. Photography is strictly prohibited on the shop floor.
+
+
+
+## 17. Confidentiality Agreement
+Every employee at Vanguard AutoTech signs a strict Non-Disclosure and IP Assignment Agreement. All custom die designs, component schematics, automation script codes, manufacturing tolerances, and client part contracts are proprietary trade secrets. Disclosing these secrets to competitors or publishing details in industry trade magazines without marketing approval is a breach of contract.
+
+
+

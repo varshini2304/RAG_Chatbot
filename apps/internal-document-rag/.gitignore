@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data, Uploads, ChromaDB, BM25, Images, and Caches
+data/uploads/*
+!data/uploads/.gitkeep
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+data/bm25/*
+!data/bm25/.gitkeep
+data/bm25_index/*
+!data/bm25_index/.gitkeep
+data/images/*
+!data/images/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+data/chats/*
+!data/chats/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+
+# Build and test distribution directories
+.dist/
+tmp/
+scratch/
+
+# Temporary output text, markdown, log & image artifacts
+test_*_output.txt
+test_output.txt
+validation_results.md
+*.log
+!image*.png
+
+# Local notebooks and editor files
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
+*.sqlite3
+
+# PDF documentation
+/docs/viva_prep_guide.pdf

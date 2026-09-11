@@ -1,0 +1,307 @@
+{
+  "row": 11,
+  "name": "OCR Text & Label Extraction",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "C:\\Users\\Admin\\envs\\ragbot\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-25T09:22:13.845802+00:00"
+  },
+  "results": [
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "PaddleOCR 3.7 (enable_mkldnn=False)",
+      "version": "3.7.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 9.3895,
+      "texts": [],
+      "text_count": 0,
+      "expected_keywords": [],
+      "expected_found": 0,
+      "expected_count": 0,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "PaddleOCR 3.7 (enable_mkldnn=False)",
+      "version": "3.7.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 8.6415,
+      "texts": [],
+      "text_count": 0,
+      "expected_keywords": [],
+      "expected_found": 0,
+      "expected_count": 0,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "PaddleOCR 3.7 (enable_mkldnn=False)",
+      "version": "3.7.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 34.5207,
+      "texts": [
+        {
+          "text": "目次(つづき)",
+          "confidence": 0.9335
+        },
+        {
+          "text": "第5章 化学物質による労働災害の防止",
+          "confidence": 0.9816
+        },
+        {
+          "text": "化学物質取扱リスク／労働災害事例／労働災害防止対策等",
+          "confidence": 0.9894
+        },
+        {
+          "text": "第6章健康に働くためには",
+          "confidence": 0.9951
+        },
+        {
+          "text": "労働衛生管理／精神障害／メンタルヘルス対策／心とからだ",
+          "confidence": 0.9901
+        },
+        {
+          "text": "の健康作り／過重労働／熱中症対策／石綿(アスベスト)対策",
+          "confidence": 0.952
+        },
+        {
+          "text": "感染症予防等",
+          "confidence": 0.9998
+        },
+        {
+          "text": "第7章 今後の建設現場の安全衛生活動",
+          "confidence": 0.9753
+        },
+        {
+          "text": "i-Constructionの活用／エイジフレンドリーな職場つくり",
+          "confidence": 0.9823
+        }
+      ],
+      "text_count": 9,
+      "expected_keywords": [
+        "安全",
+        "労働災害"
+      ],
+      "expected_found": 2,
+      "expected_count": 2,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "PaddleOCR 3.7 (enable_mkldnn=False)",
+      "version": "3.7.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 16.6844,
+      "texts": [
+        {
+          "text": "ご説明いただいた先生",
+          "confidence": 0.9999
+        },
+        {
+          "text": "(独)労働者健康安全機構",
+          "confidence": 0.9934
+        },
+        {
+          "text": "労働安全衛生総合研究所",
+          "confidence": 0.999
+        },
+        {
+          "text": "高木元也先生",
+          "confidence": 0.9998
+        }
+      ],
+      "text_count": 4,
+      "expected_keywords": [
+        "安全"
+      ],
+      "expected_found": 1,
+      "expected_count": 1,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "EasyOCR 1.7.2 (ja+en)",
+      "version": "1.7.2",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 5.5768,
+      "texts": [],
+      "text_count": 0,
+      "expected_keywords": [],
+      "expected_found": 0,
+      "expected_count": 0,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "EasyOCR 1.7.2 (ja+en)",
+      "version": "1.7.2",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 5.1141,
+      "texts": [],
+      "text_count": 0,
+      "expected_keywords": [],
+      "expected_found": 0,
+      "expected_count": 0,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "EasyOCR 1.7.2 (ja+en)",
+      "version": "1.7.2",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 8.2697,
+      "texts": [
+        {
+          "text": "目",
+          "confidence": 0.9987
+        },
+        {
+          "text": "次(つづき)",
+          "confidence": 0.9984
+        },
+        {
+          "text": "第5章 化学物質による労働災害の防止",
+          "confidence": 0.9047
+        },
+        {
+          "text": "化学物質取報リスクノ労働災害事例ノ労働災害防止対策 等",
+          "confidence": 0.4899
+        },
+        {
+          "text": "第6章 健康に働くためには",
+          "confidence": 0.9431
+        },
+        {
+          "text": "労働衛生管理ノ精神障害ノメンタルヘルス対策ノ心とからだ",
+          "confidence": 0.9227
+        },
+        {
+          "text": "の健康作りノ過重労働ノ熱中症対策",
+          "confidence": 0.8088
+        },
+        {
+          "text": "'石綿(アスベスト)対策",
+          "confidence": 0.9429
+        },
+        {
+          "text": "感染症予防 等",
+          "confidence": 0.9566
+        },
+        {
+          "text": "第ワ章 今後の建設現場の安全衛生活動",
+          "confidence": 0.9016
+        },
+        {
+          "text": "i-Constructionの活用",
+          "confidence": 0.9626
+        },
+        {
+          "text": "エイジフレンドリーな職場つくり",
+          "confidence": 0.9826
+        }
+      ],
+      "text_count": 12,
+      "expected_keywords": [
+        "安全",
+        "労働災害"
+      ],
+      "expected_found": 2,
+      "expected_count": 2,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "EasyOCR 1.7.2 (ja+en)",
+      "version": "1.7.2",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 5.5346,
+      "texts": [
+        {
+          "text": "ご説明いただいた先生",
+          "confidence": 0.238
+        },
+        {
+          "text": "(労働y健康安全機精",
+          "confidence": 0.016
+        },
+        {
+          "text": "労働安全衛生織合研聴所",
+          "confidence": 0.1148
+        },
+        {
+          "text": "高木元也 先生",
+          "confidence": 0.6918
+        }
+      ],
+      "text_count": 4,
+      "expected_keywords": [
+        "安全"
+      ],
+      "expected_found": 1,
+      "expected_count": 1,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "Tesseract (EN only — jpn NOT INSTALLED)",
+      "version": "N/A",
+      "status": "NOT TESTED — tesseract not available",
+      "elapsed_sec": 0,
+      "texts": [],
+      "text_count": 0,
+      "errors": [
+        "tesseract is not installed or it's not in your PATH. See README file for more information."
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "Tesseract (EN only — jpn NOT INSTALLED)",
+      "version": "N/A",
+      "status": "NOT TESTED — tesseract not available",
+      "elapsed_sec": 0,
+      "texts": [],
+      "text_count": 0,
+      "errors": [
+        "tesseract is not installed or it's not in your PATH. See README file for more information."
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "Tesseract (EN only — jpn NOT INSTALLED)",
+      "version": "N/A",
+      "status": "NOT TESTED — tesseract not available",
+      "elapsed_sec": 0,
+      "texts": [],
+      "text_count": 0,
+      "errors": [
+        "tesseract is not installed or it's not in your PATH. See README file for more information."
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "Tesseract (EN only — jpn NOT INSTALLED)",
+      "version": "N/A",
+      "status": "NOT TESTED — tesseract not available",
+      "elapsed_sec": 0,
+      "texts": [],
+      "text_count": 0,
+      "errors": [
+        "tesseract is not installed or it's not in your PATH. See README file for more information."
+      ]
+    }
+  ]
+}

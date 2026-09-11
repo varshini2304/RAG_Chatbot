@@ -1,0 +1,24 @@
+# Vanguard AutoTech Corp — Internal Document Segment
+Document ID: OPER-VAT-2026-V8.0-PART
+Confidentiality: Highly Restricted Internal
+
+## 25. Customer Support Process
+Vanguard provides technical B2B customer support for automotive assembly plants:
+1. **Support Ingestion:** Quality issues are reported via email `careers@vanguardautotech.com` (Quality Desk) or direct hotline (Ext. 7789).
+2. **Action Plan:** Within 2 hours of receiving a defect report, a Quality Engineer is assigned to perform root-cause analysis.
+3. **Containment:** If a defect is confirmed, we issue a containment notice to hold all shipped inventory in transit.
+4. **Resolution:** A physical replacement batch is manufactured and expedited to the customer site within 48 hours.
+
+
+
+## 26. Frequently Asked Questions
+* **Q: Where is meeting room Piston Lounge located?**  
+  A: Meeting Room **Piston Lounge** is on the 1st floor of the Engineering building. **Assembly Room 1** and **Transmission Hub** are located on the 2nd floor of Plant B.
+* **Q: What is the holiday schedule for the Detroit campus?**  
+  A: Vanguard observes 9 holidays: New Year's Day, Good Friday, Memorial Day, Independence Day, Labor Day, Thanksgiving (Thursday only), Christmas Eve, Christmas Day, and New Year's Eve.
+
+---
+
+*Note: This operations manual is compiled under standard manufacturing guide VAT-800.*
+
+

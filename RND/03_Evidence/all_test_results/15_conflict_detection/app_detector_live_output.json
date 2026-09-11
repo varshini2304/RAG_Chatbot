@@ -1,0 +1,45 @@
+{
+  "module": "apps.internal-document-rag.app.llm.contradiction_detector",
+  "function": "detect_contradictions",
+  "prompt_template": "You are a factual consistency checker. Below are text excerpts from different documents. Determine whether any two excerpts contain a DIRECT factual contradiction \u2014 a case where one excerpt asserts something that the other explicitly denies or contradicts on the same specific fact.\n\nExcerpts:\n{excerpts}\n\nReply with ONLY valid JSON in this exact format (no markdown, no commentary):\n{{\"contradiction\": true/false, \"summary\": \"one-sentence description of the conflict, or null if none\"}}",
+  "test_cases": [
+    {
+      "test_id": "CON-REAL-01",
+      "type": "CONTRADICTION",
+      "sources": [
+        "test_instructional_normal.mp4",
+        "milling_machine_operating_manual.pdf"
+      ],
+      "expected_contradiction": true,
+      "actual_contradiction": true,
+      "summary": "Video states spindle operates at 2800 RPM in high gear, which directly contradicts the manual limit of Maximum 1800 RPM for aluminum milling on Page 3.",
+      "skipped": false,
+      "pass_fail": "PASS"
+    },
+    {
+      "test_id": "CON-REAL-02",
+      "type": "MATCHING",
+      "sources": [
+        "test_instructional_normal.mp4",
+        "milling_machine_operating_manual.pdf"
+      ],
+      "expected_contradiction": false,
+      "actual_contradiction": false,
+      "summary": null,
+      "skipped": false,
+      "pass_fail": "PASS"
+    },
+    {
+      "test_id": "CON-REAL-03",
+      "type": "SINGLE_SOURCE_ABSTAIN",
+      "sources": [
+        "test_instructional_normal.mp4"
+      ],
+      "expected_contradiction": false,
+      "actual_contradiction": false,
+      "skipped": true,
+      "pass_fail": "PASS"
+    }
+  ],
+  "overall_pass_rate": "3 / 3 = 100.0%"
+}

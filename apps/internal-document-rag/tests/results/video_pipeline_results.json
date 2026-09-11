@@ -1,0 +1,300 @@
+{
+  "timestamp": "2026-09-03 10:25:00",
+  "scope": "Video Intake Exception Handling, Size/Duration Limits & Integration Testing",
+  "status": "Completed with all executed tests passing; genuine unsupported-codec fixture pending.",
+  "environment": {
+    "python": "3.11.0",
+    "pyav": "18.1.0",
+    "ffprobe": "ffprobe version 9.0-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers",
+    "config": {
+      "video_max_file_size_mb": 2048,
+      "video_max_size_bytes": 2147483648,
+      "video_max_duration_sec": 7200.0,
+      "video_supported_codecs": [
+        "h264",
+        "vp9"
+      ],
+      "video_supported_formats": [
+        "mp4",
+        "mov",
+        "m4a",
+        "3gp",
+        "3g2",
+        "mj2",
+        "webm",
+        "matroska",
+        "matroska",
+        "webm",
+        "mov",
+        "mp4",
+        "m4a",
+        "3gp",
+        "3g2",
+        "mj2"
+      ]
+    }
+  },
+  "group_a_valid_fixtures": [
+    {
+      "input_file": "const_01.mp4",
+      "exists": true,
+      "file_size_bytes": 91471350,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.0,
+      "codec": "h264",
+      "resolution": "640x480",
+      "fps": 25.0,
+      "duration_sec": 545.12,
+      "elapsed_sec": 0.1222,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": ""
+    },
+    {
+      "input_file": "controlled_synthetic_corrupt.mp4",
+      "exists": true,
+      "file_size_bytes": 8812020,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.033,
+      "codec": "h264",
+      "resolution": "640x360",
+      "fps": 30.0,
+      "duration_sec": 456.633,
+      "elapsed_sec": 0.1108,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": "Valid container & video stream header per R&D Row 01-02 evidence. Audio bitstream anomaly at 136s evaluated in Phase 3."
+    },
+    {
+      "input_file": "controlled_vfr_test.mp4",
+      "exists": true,
+      "file_size_bytes": 24837516,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.0,
+      "codec": "h264",
+      "resolution": "640x360",
+      "fps": 30.0,
+      "duration_sec": 456.62,
+      "elapsed_sec": 0.1055,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": ""
+    },
+    {
+      "input_file": "test_instructional_normal.mp4",
+      "exists": true,
+      "file_size_bytes": 29373403,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.0,
+      "codec": "h264",
+      "resolution": "640x360",
+      "fps": 30.0,
+      "duration_sec": 456.62,
+      "elapsed_sec": 0.1061,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": ""
+    },
+    {
+      "input_file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "exists": true,
+      "file_size_bytes": 9629943,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.007,
+      "codec": "vp9",
+      "resolution": "320x240",
+      "fps": 29.97,
+      "duration_sec": 220.294,
+      "elapsed_sec": 0.0928,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": ""
+    },
+    {
+      "input_file": "Working on machine.mp4",
+      "exists": true,
+      "file_size_bytes": 91471350,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.0,
+      "codec": "h264",
+      "resolution": "640x480",
+      "fps": 25.0,
+      "duration_sec": 545.12,
+      "elapsed_sec": 0.1114,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": ""
+    },
+    {
+      "input_file": "Working_on_machine_noisy.mp4",
+      "exists": true,
+      "file_size_bytes": 87435450,
+      "gatekeeper_valid": true,
+      "rejection_reason": null,
+      "decode_success": true,
+      "first_frame_timestamp": 0.0,
+      "codec": "h264",
+      "resolution": "640x480",
+      "fps": 25.0,
+      "duration_sec": 545.12,
+      "elapsed_sec": 0.0931,
+      "classification": "VALID_FIXTURE",
+      "outcome": "ACCEPTED (PASS)",
+      "notes": ""
+    }
+  ],
+  "group_b_boundary_enforcement": [
+    {
+      "test": "File Size: Exact Limit Boundary (size == max_size)",
+      "limit_value": "29373403 bytes",
+      "actual_value": "29373403 bytes",
+      "expected": "ACCEPTED",
+      "actual": "ACCEPTED",
+      "result": "PASS",
+      "elapsed_sec": 0.0428
+    },
+    {
+      "test": "File Size: 1-Byte Overflow Boundary (size == max_size + 1)",
+      "limit_value": "29373402 bytes",
+      "actual_value": "29373403 bytes",
+      "expected": "REJECTED (FileSizeLimitExceededError)",
+      "actual": "REJECTED",
+      "result": "PASS",
+      "elapsed_sec": 0.0003
+    },
+    {
+      "test": "Video Duration: Exact Limit Boundary (duration == max_duration)",
+      "limit_value": "456.62 s",
+      "actual_value": "456.62 s",
+      "expected": "ACCEPTED",
+      "actual": "ACCEPTED",
+      "result": "PASS",
+      "elapsed_sec": 0.044
+    },
+    {
+      "test": "Video Duration: Overflow Boundary (duration > max_duration)",
+      "limit_value": "455.62 s",
+      "actual_value": "456.62 s",
+      "expected": "REJECTED (VideoDurationLimitExceededError)",
+      "actual": "REJECTED",
+      "result": "PASS",
+      "elapsed_sec": 0.0886
+    }
+  ],
+  "group_c_invalid_and_corrupt": [
+    {
+      "case": "Missing file",
+      "target": "missing_non_existent_clip_8888.mp4",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Video file not found: missing_non_existent_clip_8888.mp4",
+      "strict_exception_raised": true,
+      "caught_exception": "InvalidInputError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.00016
+    },
+    {
+      "case": "Directory path",
+      "target": "videos",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Target is not a valid file: videos",
+      "strict_exception_raised": true,
+      "caught_exception": "InvalidInputError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.00018
+    },
+    {
+      "case": "Empty (0-byte) file",
+      "target": "tmp_thfr_co.mp4",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Video file is empty (0 bytes): tmp_thfr_co.mp4",
+      "strict_exception_raised": true,
+      "caught_exception": "InvalidInputError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.00027
+    },
+    {
+      "case": "Truncated header MP4",
+      "target": "tmps5d915en.mp4",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Corrupt or unreadable media container: tmps5d915en.mp4",
+      "strict_exception_raised": true,
+      "caught_exception": "CorruptMediaError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.1093
+    },
+    {
+      "case": "Random garbage bytes",
+      "target": "tmpxyva3t07.mp4",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Corrupt or unreadable media container: tmpxyva3t07.mp4",
+      "strict_exception_raised": true,
+      "caught_exception": "CorruptMediaError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.10787
+    },
+    {
+      "case": "Non-video PDF document",
+      "target": "milling_machine_operating_manual.pdf",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Corrupt or unreadable media container: milling_machine_operating_manual.pdf",
+      "strict_exception_raised": true,
+      "caught_exception": "CorruptMediaError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.10205
+    },
+    {
+      "case": "Config-restricted codec (h264 on vp9-only)",
+      "target": "const_01.mp4",
+      "gatekeeper_rejected": true,
+      "rejection_reason": "Unsupported video codec 'h264'. Supported codecs are: vp9.",
+      "strict_exception_raised": true,
+      "caught_exception": "UnsupportedCodecError",
+      "downstream_blocked": true,
+      "classification": "INVALID_FIXTURE",
+      "outcome": "REJECTED (PASS)",
+      "elapsed_sec": 0.1377
+    }
+  ],
+  "fixture_gap_audit": {
+    "codecs_found_in_repo": [
+      "h264",
+      "vp9"
+    ],
+    "genuine_unsupported_codec_fixture_present": false,
+    "status_note": "Awaiting addition of a genuine non-h264/non-vp9 media fixture (e.g. HEVC/H.265 or ProRes). Codec exclusion enforcement was verified via configuration policy."
+  },
+  "metrics": {
+    "total_valid_fixtures_tested": 7,
+    "valid_fixtures_accepted": 7,
+    "false_rejections": 0,
+    "false_rejection_rate_pct": 0.0,
+    "total_invalid_fixtures_tested": 7,
+    "invalid_fixtures_rejected": 7,
+    "false_acceptances": 0,
+    "false_acceptance_rate_pct": 0.0
+  }
+}

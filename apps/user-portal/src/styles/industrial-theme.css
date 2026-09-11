@@ -1,0 +1,615 @@
+/**
+ * Industrial Engineering Theme Design Tokens & Layout Rules
+ * RAG SOP — Manufacturing Knowledge System
+ */
+
+:root {
+  /* Surface Foundations */
+  --sop-bg-root: #0b0d17;
+  --sop-bg-surface: #111424;
+  --sop-bg-panel: #161a2e;
+  --sop-bg-elevated: #1c213a;
+  --sop-bg-hover: #222947;
+  --sop-bg-active: #273054;
+
+  /* Borders & Dividers */
+  --sop-border: #1f253d;
+  --sop-border-subtle: #171b2d;
+  --sop-border-focus: #3b82f6;
+
+  /* Functional Status Colors */
+  --sop-teal: #10b981;
+  --sop-teal-bg: rgba(16, 185, 129, 0.12);
+  --sop-teal-border: rgba(16, 185, 129, 0.35);
+
+  --sop-amber: #f59e0b;
+  --sop-amber-bg: rgba(245, 158, 11, 0.12);
+  --sop-amber-border: rgba(245, 158, 11, 0.35);
+
+  --sop-red: #ef4444;
+  --sop-red-bg: rgba(239, 68, 68, 0.12);
+  --sop-red-border: rgba(239, 68, 68, 0.35);
+
+  --sop-blue: #3b82f6;
+  --sop-blue-bg: rgba(59, 130, 246, 0.12);
+  --sop-blue-border: rgba(59, 130, 246, 0.35);
+
+  --sop-gray: #64748b;
+  --sop-gray-bg: rgba(100, 116, 139, 0.12);
+  --sop-gray-border: rgba(100, 116, 139, 0.3);
+
+  /* Typography */
+  --sop-text-primary: #f8fafc;
+  --sop-text-secondary: #94a3b8;
+  --sop-text-muted: #64748b;
+  --sop-font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Dimensions */
+  --sop-sidebar-width: 260px;
+  --sop-topbar-height: 56px;
+  --sop-stepper-height: 48px;
+}
+
+/* App Shell Layout */
+.sop-app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--sop-bg-root);
+  color: var(--sop-text-primary);
+  overflow: hidden;
+}
+
+.sop-sidebar {
+  width: var(--sop-sidebar-width);
+  height: 100vh;
+  background-color: var(--sop-bg-surface);
+  border-right: 1px solid var(--sop-border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 20;
+}
+
+.sop-brand {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--sop-border);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sop-brand-badge {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.sop-brand-text h1 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--sop-text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sop-brand-text p {
+  font-size: 0.7rem;
+  color: var(--sop-text-secondary);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* Sidebar Nav */
+.sop-nav-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sop-nav-group-title {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sop-text-muted);
+  padding: 0 0.75rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.sop-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: var(--sop-text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.sop-nav-item:hover {
+  background-color: var(--sop-bg-hover);
+  color: var(--sop-text-primary);
+}
+
+.sop-nav-item.active {
+  background-color: var(--sop-bg-elevated);
+  color: #60a5fa;
+  border-color: var(--sop-blue-border);
+}
+
+.sop-nav-icon {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+.sop-sidebar-footer {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--sop-border);
+  background-color: var(--sop-bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sop-user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.sop-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: var(--sop-bg-elevated);
+  border: 1px solid var(--sop-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #93c5fd;
+}
+
+.sop-user-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--sop-text-primary);
+  line-height: 1.2;
+}
+
+.sop-user-role {
+  font-size: 0.7rem;
+  color: var(--sop-text-muted);
+}
+
+.sop-logout-btn {
+  color: var(--sop-text-muted);
+  padding: 0.35rem;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+.sop-logout-btn:hover {
+  color: #f87171;
+}
+
+/* Main Area Layout */
+.sop-main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Global TopBar */
+.sop-topbar {
+  height: var(--sop-topbar-height);
+  background-color: var(--sop-bg-surface);
+  border-bottom: 1px solid var(--sop-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  flex-shrink: 0;
+}
+
+.sop-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sop-page-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--sop-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sop-breadcrumb {
+  font-size: 0.75rem;
+  color: var(--sop-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.sop-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sop-mode-toggle {
+  display: flex;
+  background-color: var(--sop-bg-root);
+  border: 1px solid var(--sop-border);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.sop-mode-btn {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  color: var(--sop-text-secondary);
+  transition: background 0.15s, color 0.15s;
+}
+.sop-mode-btn.active {
+  background-color: var(--sop-bg-elevated);
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+/* Global Workflow Stepper */
+.sop-stepper-bar {
+  height: var(--sop-stepper-height);
+  background-color: var(--sop-bg-panel);
+  border-bottom: 1px solid var(--sop-border);
+  display: flex;
+  align-items: center;
+  padding: 0 1.25rem;
+  gap: 0.5rem;
+  overflow-x: auto;
+  flex-shrink: 0;
+}
+
+.sop-step-node {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--sop-text-muted);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.sop-step-node:hover:not(.locked) {
+  background-color: var(--sop-bg-hover);
+  color: var(--sop-text-primary);
+}
+
+.sop-step-node.completed {
+  color: var(--sop-teal);
+}
+
+.sop-step-node.active {
+  background-color: var(--sop-bg-elevated);
+  color: #93c5fd;
+  border-color: var(--sop-blue-border);
+}
+
+.sop-step-node.needs-review {
+  color: var(--sop-amber);
+}
+
+.sop-step-node.locked {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.sop-step-num {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  background-color: var(--sop-border);
+  color: var(--sop-text-secondary);
+}
+
+.sop-step-node.completed .sop-step-num {
+  background-color: var(--sop-teal-bg);
+  color: var(--sop-teal);
+  border: 1px solid var(--sop-teal-border);
+}
+
+.sop-step-node.active .sop-step-num {
+  background-color: var(--sop-blue-bg);
+  color: #93c5fd;
+  border: 1px solid var(--sop-blue-border);
+}
+
+.sop-step-node.needs-review .sop-step-num {
+  background-color: var(--sop-amber-bg);
+  color: var(--sop-amber);
+  border: 1px solid var(--sop-amber-border);
+}
+
+.sop-step-separator {
+  color: var(--sop-border);
+  font-size: 0.75rem;
+}
+
+/* Content Area */
+.sop-content-viewport {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Status Badges */
+.sop-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.sop-badge-teal {
+  background-color: var(--sop-teal-bg);
+  color: var(--sop-teal);
+  border: 1px solid var(--sop-teal-border);
+}
+
+.sop-badge-amber {
+  background-color: var(--sop-amber-bg);
+  color: var(--sop-amber);
+  border: 1px solid var(--sop-amber-border);
+}
+
+.sop-badge-red {
+  background-color: var(--sop-red-bg);
+  color: var(--sop-red);
+  border: 1px solid var(--sop-red-border);
+}
+
+.sop-badge-blue {
+  background-color: var(--sop-blue-bg);
+  color: #93c5fd;
+  border: 1px solid var(--sop-blue-border);
+}
+
+.sop-badge-gray {
+  background-color: var(--sop-gray-bg);
+  color: var(--sop-gray);
+  border: 1px solid var(--sop-gray-border);
+}
+
+/* Monospace Utilities */
+.sop-mono {
+  font-family: var(--sop-font-mono);
+  font-size: 0.85em;
+  letter-spacing: -0.02em;
+}
+
+/* Card & Panels */
+.sop-card {
+  background-color: var(--sop-bg-surface);
+  border: 1px solid var(--sop-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sop-card-header {
+  padding: 0.85rem 1.15rem;
+  border-bottom: 1px solid var(--sop-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--sop-bg-panel);
+}
+
+.sop-card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sop-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sop-card-body {
+  padding: 1.15rem;
+}
+
+/* Buttons */
+.sop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.sop-btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  border-color: #3b82f6;
+}
+.sop-btn-primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.sop-btn-secondary {
+  background-color: var(--sop-bg-elevated);
+  color: var(--sop-text-primary);
+  border-color: var(--sop-border);
+}
+.sop-btn-secondary:hover:not(:disabled) {
+  background-color: var(--sop-bg-hover);
+}
+
+.sop-btn-teal {
+  background-color: var(--sop-teal-bg);
+  color: var(--sop-teal);
+  border-color: var(--sop-teal-border);
+}
+.sop-btn-teal:hover:not(:disabled) {
+  background-color: rgba(16, 185, 129, 0.22);
+}
+
+.sop-btn-red {
+  background-color: var(--sop-red-bg);
+  color: var(--sop-red);
+  border-color: var(--sop-red-border);
+}
+.sop-btn-red:hover:not(:disabled) {
+  background-color: rgba(239, 68, 68, 0.22);
+}
+
+.sop-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Dense Engineering Table */
+.sop-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+  text-align: left;
+}
+
+.sop-table th {
+  background-color: var(--sop-bg-panel);
+  color: var(--sop-text-secondary);
+  font-weight: 600;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid var(--sop-border);
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
+.sop-table td {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--sop-border-subtle);
+  color: var(--sop-text-primary);
+  vertical-align: middle;
+}
+
+.sop-table tr:hover td {
+  background-color: var(--sop-bg-panel);
+}
+
+/* Callouts */
+.sop-callout {
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  line-height: 1.4;
+}
+
+.sop-callout-warning {
+  background-color: var(--sop-amber-bg);
+  border: 1px solid var(--sop-amber-border);
+  color: #fde68a;
+}
+
+.sop-callout-danger {
+  background-color: var(--sop-red-bg);
+  border: 1px solid var(--sop-red-border);
+  color: #fca5a5;
+}
+
+.sop-callout-info {
+  background-color: var(--sop-blue-bg);
+  border: 1px solid var(--sop-blue-border);
+  color: #bfdbfe;
+}
+
+/* Animations & Form Controls */
+@keyframes sop-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sop-spin {
+  animation: sop-spin 1.2s linear infinite;
+  display: inline-block;
+}
+
+.sop-select {
+  background-color: var(--sop-bg-root);
+  border: 1px solid var(--sop-border);
+  color: var(--sop-text-primary);
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+}
+.sop-select:focus {
+  border-color: #3b82f6;
+}
+
+.sop-input {
+  background-color: var(--sop-bg-root);
+  border: 1px solid var(--sop-border);
+  color: var(--sop-text-primary);
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+}
+.sop-input:focus {
+  border-color: #3b82f6;
+}

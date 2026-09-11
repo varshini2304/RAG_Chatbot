@@ -1,0 +1,58 @@
+{
+  "test_suite": "Cross-Source Conflict Detection Real Controlled Validation",
+  "generated_date": "2026-08-17",
+  "manifest_description": "Independent ground-truth specification for conflict validation across operational video and physical PDF manual.",
+  "test_cases": [
+    {
+      "test_id": "CON-REAL-01",
+      "case_type": "GENUINE_PARAMETER_CONFLICT",
+      "video_file": "test_instructional_normal.mp4",
+      "video_sha256": "4b68e9e623f95e54cefc6572eb0caeecbe30b4279ab8ecbbba6eec73c1c4f028",
+      "video_timestamp": "00:03:00 - 00:03:15 (180.52s - 195.60s)",
+      "video_expected_fact": "Spindle speed operates at 2800 RPM in high gear",
+      "document_file": "milling_machine_operating_manual.pdf",
+      "document_sha256": "4693a77fcbaee923d8c11eb23f03f56860fe6979ce41e6e96996d92ec0f41aa1",
+      "document_page": 3,
+      "document_section": "Section 3.2 Maximum Recommended Spindle Speeds",
+      "document_expected_fact": "Maximum recommended spindle speed for aluminum milling is 1800 RPM (exceeding is prohibited)",
+      "expected_conflict_type": "PARAMETER_SAFETY_DISCREPANCY",
+      "expected_conflict": true,
+      "expected_severity": "HIGH",
+      "expected_resolution": "FLAG_FOR_HUMAN_REVIEW_AND_BLOCK_PUBLISH"
+    },
+    {
+      "test_id": "CON-REAL-02",
+      "case_type": "MATCHING_INFORMATION",
+      "video_file": "test_instructional_normal.mp4",
+      "video_sha256": "4b68e9e623f95e54cefc6572eb0caeecbe30b4279ab8ecbbba6eec73c1c4f028",
+      "video_timestamp": "00:00:05 - 00:00:20 (5.20s - 18.40s)",
+      "video_expected_fact": "Mandatory PPE includes steel-toe safety boots, safety glasses, and ear plugs",
+      "document_file": "milling_machine_operating_manual.pdf",
+      "document_sha256": "4693a77fcbaee923d8c11eb23f03f56860fe6979ce41e6e96996d92ec0f41aa1",
+      "document_page": 2,
+      "document_section": "Section 2.1 Mandatory PPE Requirements",
+      "document_expected_fact": "Mandatory PPE requires steel-toe boots, ANSI Z87.1 safety glasses, and hearing protection",
+      "expected_conflict_type": "NONE_MATCHING",
+      "expected_conflict": false,
+      "expected_severity": "NONE",
+      "expected_resolution": "ALLOW_AUTO_PUBLISH"
+    },
+    {
+      "test_id": "CON-REAL-03",
+      "case_type": "INSUFFICIENT_EVIDENCE",
+      "video_file": "test_instructional_normal.mp4",
+      "video_sha256": "4b68e9e623f95e54cefc6572eb0caeecbe30b4279ab8ecbbba6eec73c1c4f028",
+      "video_timestamp": "N/A",
+      "video_expected_fact": "Coolant fluid pump filter replacement interval",
+      "document_file": "milling_machine_operating_manual.pdf",
+      "document_sha256": "4693a77fcbaee923d8c11eb23f03f56860fe6979ce41e6e96996d92ec0f41aa1",
+      "document_page": "N/A",
+      "document_section": "N/A",
+      "document_expected_fact": "Information absent from operational video transcript",
+      "expected_conflict_type": "INSUFFICIENT_EVIDENCE",
+      "expected_conflict": false,
+      "expected_severity": "NONE",
+      "expected_resolution": "ABSTAIN_AND_LOG_MISSING_EVIDENCE"
+    }
+  ]
+}

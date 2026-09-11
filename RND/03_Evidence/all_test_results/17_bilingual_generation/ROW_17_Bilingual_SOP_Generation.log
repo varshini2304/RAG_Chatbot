@@ -1,0 +1,11 @@
+
+======================================================================
+  ROW 17 — Bilingual Work Instruction Generation
+  Started: 2026-08-26T04:44:22.632822+00:00
+  Environment: C:\Users\Admin\envs\ragbot\Scripts\python.exe (Python 3.11.0)
+======================================================================
+  [~] Direct Bilingual (gemini-2.5-flash)      drift=False both_lang=False
+  [✓] EN-first then Translate (groq:openai/gpt-oss-120b) drift=N/A both_lang=True
+  [✓] EN-first + NLLB-200 Local MT (600M)      drift=N/A both_lang=True
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\17_bilingual_generation\bilingual_generation_results_new.json
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\17_bilingual_generation\bilingual_generation_results_new.csv

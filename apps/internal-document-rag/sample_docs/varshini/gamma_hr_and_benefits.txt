@@ -1,0 +1,26 @@
+# Apex Healthcare & Wellness — Internal Document Segment
+Document ID: CLIN-APX-2026-V1.9-PART
+Confidentiality: Highly Restricted Internal
+
+## 18. HR FAQs
+* **Q: How do I report a clinical safety incident?**  
+  A: Safety incidents, near-misses, or medication errors must be logged in the incident reporting system (Midas) within 24 hours of occurrence.
+* **Q: How do I request a salary certificate?**  
+  A: Salary certificates and employment verification letters can be requested via email at `humanresources@apexhealth.org`.
+
+
+
+## 19. Employee Benefits
+Apex provides a comprehensive benefits package to support our healthcare team:
+* **Medical Insurance:** Comprehensive medical, prescription drug, dental, and vision insurance via Blue Cross Blue Shield of Illinois.
+* **Retirement Plan:** 403(b) retirement savings plan with up to 4% employer matching contribution after 1 year.
+* **Mental Health Services:** Free, confidential counseling sessions (up to 8 sessions per year) via the Employee Assistance Program (EAP).
+* **Tuition Assistance:** Up to $3,000 annually for continuing nursing education (CNE) and medical training programs.
+
+
+
+## 20. Payroll Information
+Salaries are paid bi-weekly on alternating Fridays. Payroll cycles run from Sunday through Saturday. Overtime pay for hourly nurses and shift technicians is paid at 1.5 times the base rate for hours exceeding 40 hours per week. Direct deposit settings and pay stubs are managed via the payroll portal: `pay.apexhealth.org`.
+
+
+

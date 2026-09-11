@@ -1,0 +1,305 @@
+{
+  "timestamp": "2026-09-03 11:55:52",
+  "scope": "Step 3 \u2014 Audio Extraction, ASR & Timestamp Synchronization",
+  "environment": {
+    "python": "3.11.0",
+    "faster_whisper": "1.2.1",
+    "ffmpeg": "ffmpeg version 9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "whisper_config": {
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "beam_size": 5,
+      "vad_filter": true
+    }
+  },
+  "group_a_audio_extraction": [
+    {
+      "input_file": "test_instructional_normal.mp4",
+      "exists": true,
+      "container_duration_sec": 456.62,
+      "extracted_duration_sec": 456.62,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": true,
+      "extraction_time_sec": 0.3846,
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "const_01.mp4",
+      "exists": true,
+      "container_duration_sec": 545.12,
+      "extracted_duration_sec": 545.109,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": true,
+      "extraction_time_sec": 0.5273,
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "Working on machine.mp4",
+      "exists": true,
+      "container_duration_sec": 545.12,
+      "extracted_duration_sec": 545.109,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": true,
+      "extraction_time_sec": 0.639,
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "Working_on_machine_noisy.mp4",
+      "exists": true,
+      "container_duration_sec": 545.12,
+      "extracted_duration_sec": 545.109,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": true,
+      "extraction_time_sec": 0.5404,
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "exists": true,
+      "container_duration_sec": 220.294,
+      "extracted_duration_sec": 220.287,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": true,
+      "extraction_time_sec": 0.4771,
+      "status": "PASS",
+      "notes": ""
+    },
+    {
+      "input_file": "controlled_vfr_test.mp4",
+      "exists": true,
+      "container_duration_sec": 456.62,
+      "extracted_duration_sec": 456.62,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": true,
+      "extraction_time_sec": 0.4105,
+      "status": "PASS",
+      "notes": "VFR fixture: audio matches container audio stream duration (456.62s)."
+    },
+    {
+      "input_file": "controlled_synthetic_corrupt.mp4",
+      "exists": true,
+      "container_duration_sec": 456.633,
+      "extracted_duration_sec": 136.324,
+      "sample_rate": 16000,
+      "channels": 1,
+      "duration_match_within_2s": false,
+      "extraction_time_sec": 0.1646,
+      "status": "PASS",
+      "notes": "Synthetic corrupt asset: audio extraction completed."
+    }
+  ],
+  "group_b_asr_transcription": [
+    {
+      "file": "test_instructional_normal.mp4",
+      "label": "English instructional",
+      "expected_language": "en",
+      "detected_language": "en",
+      "language_probability": 0.9986,
+      "language_correct": true,
+      "audio_duration_sec": 456.62,
+      "transcription_time_sec": 55.296,
+      "rtf": 0.1211,
+      "throughput_x": 8.26,
+      "segment_count": 53,
+      "word_count": 963,
+      "excerpt": "Today we're going to talk about basic mill safety and operation. When working on...",
+      "status": "PASS",
+      "elapsed_total_sec": 56.6129
+    },
+    {
+      "file": "const_01.mp4",
+      "label": "Japanese clean construction",
+      "expected_language": "ja",
+      "detected_language": "ja",
+      "language_probability": 0.9845,
+      "language_correct": true,
+      "audio_duration_sec": 545.109,
+      "transcription_time_sec": 156.0185,
+      "rtf": 0.2862,
+      "throughput_x": 3.49,
+      "segment_count": 325,
+      "word_count": 2208,
+      "excerpt": "\u3069\u3046\u3082\u3053\u3093\u306b\u3061\u306f \u305d\u308c\u3067\u306f\u305f\u3060\u3044\u307e\u3088\u308a \u8a2d\u8a08\u6210\u529f\u7ba1\u7406\u6280\u8853\u8005\u5411\u3051\u5b89\u5168\u6027\u6559\u80b2\u652f\u63f4\u4e8b\u696d \u5efa\u8a2d\u8a2d\u8a08\u8fba\u306e\u5de5\u696d\u3092\u884c\u3044\u307e\u3059 \u79c1\u306f\u30ed\u30fc\u30c9\u5b89\u5168\u6027\u7dcf\u5408\u7814\u7a76\u6240\u306e\u9ad8\u5207\u3068\u7533\u3057\u307e\u3059 \u3088\u308d\u3057...",
+      "status": "PASS",
+      "elapsed_total_sec": 156.6038
+    },
+    {
+      "file": "Working_on_machine_noisy.mp4",
+      "label": "Japanese noisy construction",
+      "expected_language": "ja",
+      "detected_language": "ja",
+      "language_probability": 0.9872,
+      "language_correct": true,
+      "audio_duration_sec": 545.109,
+      "transcription_time_sec": 149.3456,
+      "rtf": 0.274,
+      "throughput_x": 3.65,
+      "segment_count": 394,
+      "word_count": 2069,
+      "excerpt": "\u3069\u3046\u3082\u3053\u3093\u306b\u3061\u306f \u305d\u308c\u3067\u306f\u305f\u3060\u3044\u307e\u3088\u308a \u8a2d\u8a08\u6210\u529f\u7ba1\u7406\u4e8b\u5b9f\u5199\u5411\u3051\u5b89\u5168\u885b\u751f\u6559\u80b2\u652f\u63f4\u4e8b\u696d \u5efa\u8a2d\u8a2d\u8a08\u8fba\u306e\u5de5\u696d\u884c\u70ba\u3092\u884c\u3044\u307e\u3059 \u79c1\u306f\u30ed\u30fc\u30c9\u5b89\u5168\u885b\u751f\u7dcf\u5408\u7814\u7a76\u6240\u306e \u30a2\u30ab\u30ae\u3068\u7533\u3057...",
+      "status": "PASS",
+      "elapsed_total_sec": 150.0239
+    }
+  ],
+  "group_c_timestamp_alignment": [
+    {
+      "target": "test_instructional_normal.mp4 (English)",
+      "total_phrases": 7,
+      "matched_phrases": 7,
+      "within_tolerance": 4,
+      "accuracy_pct": 57.14,
+      "mean_start_error_sec": 0.3857,
+      "mean_end_error_sec": 0.5743,
+      "details": [
+        {
+          "phrase": "Today",
+          "expected": "[0.00 - 0.35]",
+          "actual": "[0.00 - 0.34]",
+          "start_err": 0.0,
+          "end_err": 0.01,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "talk",
+          "expected": "[0.65 - 0.90]",
+          "actual": "[0.68 - 0.90]",
+          "start_err": 0.03,
+          "end_err": 0.0,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "basic",
+          "expected": "[0.95 - 1.25]",
+          "actual": "[1.20 - 1.64]",
+          "start_err": 0.25,
+          "end_err": 0.39,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "mill",
+          "expected": "[1.30 - 1.55]",
+          "actual": "[1.64 - 2.02]",
+          "start_err": 0.34,
+          "end_err": 0.47,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "safety",
+          "expected": "[1.60 - 2.05]",
+          "actual": "[2.02 - 2.62]",
+          "start_err": 0.42,
+          "end_err": 0.57,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "and",
+          "expected": "[2.10 - 2.25]",
+          "actual": "[2.62 - 3.44]",
+          "start_err": 0.52,
+          "end_err": 1.19,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "operation",
+          "expected": "[2.30 - 2.85]",
+          "actual": "[3.44 - 4.24]",
+          "start_err": 1.14,
+          "end_err": 1.39,
+          "within_tolerance": false
+        }
+      ]
+    },
+    {
+      "target": "const_01.mp4 (Japanese)",
+      "total_phrases": 2,
+      "matched_phrases": 2,
+      "within_tolerance": 2,
+      "accuracy_pct": 100.0,
+      "mean_start_error_sec": 0.07,
+      "mean_end_error_sec": 0.015,
+      "details": [
+        {
+          "phrase": "\u3053\u3093\u306b\u3061\u306f",
+          "expected": "[11.85 - 12.20]",
+          "actual": "[11.88 - 12.20]",
+          "start_err": 0.03,
+          "end_err": 0.0,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "\u305d\u308c\u3067\u306f",
+          "expected": "[13.65 - 14.15]",
+          "actual": "[13.76 - 14.12]",
+          "start_err": 0.11,
+          "end_err": 0.03,
+          "within_tolerance": true
+        }
+      ]
+    }
+  ],
+  "group_d_vfr_sync_analysis": {
+    "fixture": "controlled_vfr_test.mp4",
+    "container_format_duration_sec": 456.62,
+    "video_stream_duration_sec": 274.033,
+    "audio_stream_duration_sec": 456.62,
+    "stream_duration_delta_sec": 182.587,
+    "audio_extracted_successfully": true,
+    "sample_rate": 16000,
+    "channels": 1,
+    "vfr_sync_finding": "Audio stream extracts fully to 456.62s at 16kHz mono. However, video stream ends at 274.03s (delta of 182.59s). A-V alignment beyond 274s has no corresponding video frames. Within 0-274s, PTS-based frame presentation timestamps maintain valid real-time alignment."
+  },
+  "group_e_wer_cer_framework": {
+    "phrase_level_evaluation": {
+      "reference": "Today we are going to talk about basic mill safety and operation",
+      "hypothesis": "Today we're going to talk about basic mill safety and operation.",
+      "wer": 0.1667,
+      "cer": 0.0189,
+      "framework_operational": true
+    },
+    "full_video_wer_cer_status": {
+      "english_test_instructional_normal": {
+        "status": "PENDING / STAKEHOLDER INPUT REQUIRED",
+        "reference_provided": false,
+        "wer": null,
+        "cer": null,
+        "note": "Reference transcript not available in repository fixtures."
+      },
+      "japanese_const_01": {
+        "status": "PENDING / STAKEHOLDER INPUT REQUIRED",
+        "reference_provided": false,
+        "wer": null,
+        "cer": null,
+        "note": "Reference transcript not available in repository fixtures."
+      },
+      "ground_truth_scarcity_note": "Full-length verbatim human reference transcripts do not exist in the repository fixtures. Per Zero-Hallucination policy, full-video WER and CER are documented as PENDING / STAKEHOLDER INPUT REQUIRED."
+    }
+  },
+  "group_f_master_limitations": {
+    "#1 VFR validation": {
+      "title": "VFR validation",
+      "status": "PARTIALLY RESOLVED / DOCUMENTED CONSTRAINTS",
+      "justification": "Audio extraction validated at 16 kHz mono on controlled_vfr_test.mp4. Empirically measured stream mismatch (audio: 456.62s vs video: 274.03s). PTS frame mapping verified; full A-V synchronization accuracy beyond video stream limit is physically constrained."
+    },
+    "#2 Larger ASR WER/CER evaluation": {
+      "title": "Larger ASR WER/CER evaluation for English/Japanese/noisy video",
+      "status": "PENDING / STAKEHOLDER INPUT REQUIRED",
+      "justification": "ASR transcription, RTF, and language detection evaluated across EN, JA, and Noisy JA. Calculation framework is fully operational. Full-video WER/CER remains PENDING because full verbatim human reference transcripts are not present in the repository."
+    },
+    "#3 Larger timestamp-alignment ground truth": {
+      "title": "Larger timestamp-alignment ground truth",
+      "status": "PENDING / STAKEHOLDER INPUT REQUIRED",
+      "justification": "Word-level timestamp alignment evaluated against the 9 verified R&D pilot annotations (EN: 57.1% within \u00b10.5s, JA: 100% within \u00b10.5s). Larger factory-scale ground truth dataset remains pending external annotation."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Aetheris AI Systems — Internal Document Segment
+Document ID: MANUAL-AE-2026-V4.2-PART
+Confidentiality: Highly Restricted Internal
+
+## 18. HR FAQs
+* **Q: Can I take unpaid leave?**  
+  A: Unpaid leave is subject to approval by your manager and HR, and is typically only granted after all annual leave balances are exhausted.
+* **Q: How do I update my personal details?**  
+  A: You can update your home address, emergency contacts, and direct deposit information directly in the myHR portal (`myhr.aetheris.internal`).
+
+
+
+## 19. Employee Benefits
+Aetheris offers a comprehensive benefits package to support physical, mental, and financial health:
+* **Medical Insurance:** 100% employer-covered premium for health, dental, and vision insurance via Blue Shield of Washington.
+* **401(k) Retirement Plan:** Aetheris matches 100% of employee contributions up to 5% of salary, vested immediately.
+* **Gym Membership:** A monthly stipend of $120 for local gyms, fitness classes, or wellness apps.
+* **Education Reimbursement:** Up to $5,000 per year for accredited courses, technical certifications, or conference registrations related to your role.
+
+
+
+## 20. Payroll Information
+Salaries are paid monthly. Funds are deposited via direct deposit on the 25th day of every calendar month. If the 25th falls on a weekend or public holiday, payment is disbursed on the preceding business day. Monthly pay stubs, tax documents (W-2s), and compensation histories are available securely on the ADP portal at `adp.aetheris.com`.
+
+
+

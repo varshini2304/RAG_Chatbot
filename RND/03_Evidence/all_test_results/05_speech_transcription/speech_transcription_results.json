@@ -1,0 +1,412 @@
+{
+  "row": 5,
+  "name": "Speech Transcription",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "C:\\Users\\Admin\\envs\\ragbot\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-25T11:58:22.012445+00:00"
+  },
+  "results": [
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "label": "English instructional",
+      "engine": "faster-whisper",
+      "model_size": "tiny",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 0.6435,
+      "transcription_time_sec": 25.4225,
+      "audio_duration_sec": 456.62,
+      "rtf": 0.0557,
+      "throughput_x": 17.95,
+      "detected_language": "en",
+      "language_probability": 0.9984,
+      "expected_language": "en",
+      "language_correct": true,
+      "segment_count": 51,
+      "total_word_count": 971,
+      "transcript_excerpt": [
+        {
+          "start": 0.0,
+          "end": 4.28,
+          "text": " Today, we're going to talk about basic mill safety and operation.",
+          "words": 11
+        },
+        {
+          "start": 4.96,
+          "end": 10.44,
+          "text": " When working on the machine, I always want to use proper PPE, so this usually is steel",
+          "words": 17
+        },
+        {
+          "start": 10.44,
+          "end": 19.58,
+          "text": " tow boots, safety glasses, and earplugs. On my milling machine, I have my cutter rotating",
+          "words": 15
+        }
+      ],
+      "mem_delta_mb": 133.7,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "faster-whisper tiny"
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "label": "English instructional",
+      "engine": "faster-whisper",
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 1.0426,
+      "transcription_time_sec": 57.0808,
+      "audio_duration_sec": 456.62,
+      "rtf": 0.125,
+      "throughput_x": 8.0,
+      "detected_language": "en",
+      "language_probability": 0.9986,
+      "expected_language": "en",
+      "language_correct": true,
+      "segment_count": 53,
+      "total_word_count": 963,
+      "transcript_excerpt": [
+        {
+          "start": 0.0,
+          "end": 4.24,
+          "text": " Today we're going to talk about basic mill safety and operation.",
+          "words": 11
+        },
+        {
+          "start": 4.88,
+          "end": 8.46,
+          "text": " When working on the machine, I always want to use proper PPE.",
+          "words": 12
+        },
+        {
+          "start": 9.16,
+          "end": 14.78,
+          "text": " So this usually is steel tote boots, safety glasses, and earplugs.",
+          "words": 11
+        }
+      ],
+      "mem_delta_mb": 139.3,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "faster-whisper base"
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "label": "English instructional",
+      "engine": "whisperx",
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 14.417,
+      "transcription_time_sec": 99.1988,
+      "audio_duration_sec": 456.62,
+      "rtf": 0.2172,
+      "throughput_x": 4.6,
+      "detected_language": "en",
+      "language_probability": 1.0,
+      "expected_language": "en",
+      "language_correct": true,
+      "segment_count": 69,
+      "total_word_count": 979,
+      "aligned_with_phonemes": true,
+      "transcript_excerpt": [
+        {
+          "start": 0.191,
+          "end": 4.394,
+          "text": "Today, we're going to talk about basic mill safety and operation.",
+          "words": 11
+        },
+        {
+          "start": 4.875,
+          "end": 8.738,
+          "text": "When working on the machine, I always want to use proper PPE.",
+          "words": 12
+        },
+        {
+          "start": 9.078,
+          "end": 14.842,
+          "text": "So this usually is steel toe boots, safety glasses, and ear plugs.",
+          "words": 12
+        }
+      ],
+      "mem_delta_mb": 2093.6,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "WhisperX base"
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "label": "Japanese construction (Clean)",
+      "engine": "faster-whisper",
+      "model_size": "tiny",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 0.5227,
+      "transcription_time_sec": 91.9682,
+      "audio_duration_sec": 545.109,
+      "rtf": 0.1687,
+      "throughput_x": 5.93,
+      "detected_language": "ja",
+      "language_probability": 0.9831,
+      "expected_language": "ja",
+      "language_correct": true,
+      "segment_count": 324,
+      "total_word_count": 2325,
+      "transcript_excerpt": [
+        {
+          "start": 11.34,
+          "end": 13.7,
+          "text": "どんこにしは",
+          "words": 6
+        },
+        {
+          "start": 13.7,
+          "end": 15.68,
+          "text": "それではただいまより",
+          "words": 6
+        },
+        {
+          "start": 15.68,
+          "end": 17.72,
+          "text": "設計成功管理技術者向け",
+          "words": 11
+        }
+      ],
+      "mem_delta_mb": 106.5,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "faster-whisper tiny"
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "label": "Japanese construction (Clean)",
+      "engine": "faster-whisper",
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 0.7139,
+      "transcription_time_sec": 163.8082,
+      "audio_duration_sec": 545.109,
+      "rtf": 0.3005,
+      "throughput_x": 3.33,
+      "detected_language": "ja",
+      "language_probability": 0.9845,
+      "expected_language": "ja",
+      "language_correct": true,
+      "segment_count": 372,
+      "total_word_count": 2075,
+      "transcript_excerpt": [
+        {
+          "start": 11.34,
+          "end": 12.2,
+          "text": "どうもこんにちは",
+          "words": 3
+        },
+        {
+          "start": 13.76,
+          "end": 15.44,
+          "text": "それではただいまより",
+          "words": 6
+        },
+        {
+          "start": 15.44,
+          "end": 19.88,
+          "text": "設計成功管理技術者向け安全性教育支援事業",
+          "words": 19
+        }
+      ],
+      "mem_delta_mb": 126.6,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "faster-whisper base"
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "label": "Japanese construction (Clean)",
+      "engine": "whisperx",
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 2.0751,
+      "transcription_time_sec": 260.1233,
+      "audio_duration_sec": 545.109,
+      "rtf": 0.4772,
+      "throughput_x": 2.1,
+      "detected_language": "ja",
+      "language_probability": 1.0,
+      "expected_language": "ja",
+      "language_correct": true,
+      "segment_count": 22,
+      "total_word_count": 3032,
+      "aligned_with_phonemes": true,
+      "transcript_excerpt": [
+        {
+          "start": 11.721,
+          "end": 28.372,
+          "text": "どうも、こんにちは。それでは、ただいまより、設計成功管理技術者向け、安全衛生教育支援事業、建設設計辺の工業を行います。私は、ロード安全衛生総合研究所の高木と申します。よろしくお願いします。",
+          "words": 94
+        },
+        {
+          "start": 40.098,
+          "end": 61.663,
+          "text": "まずはじめにです。この講義なんですけれども、これまで建設現場の労働災害というものは、関係者の対側の努力によって、この反省機器が近く減少してきました。ただ、今も年間269人、これ、平成31年、レバーガンレンの数ですけれども、269名もの等等にの違う場合はあります。",
+          "words": 131
+        },
+        {
+          "start": 62.412,
+          "end": 72.391,
+          "text": "今後、建設現場の労働災害をさらに現象させるためには、セコウの上流側の設計段階での労働災害防止が求められます。",
+          "words": 54
+        }
+      ],
+      "mem_delta_mb": 1646.0,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "WhisperX base"
+    },
+    {
+      "file": "Working_on_machine_noisy.mp4",
+      "sha256_prefix": "3d4303a67b790909",
+      "label": "Noisy Japanese construction (Pink Noise Injected)",
+      "engine": "faster-whisper",
+      "model_size": "tiny",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 0.6141,
+      "transcription_time_sec": 106.8742,
+      "audio_duration_sec": 545.109,
+      "rtf": 0.1961,
+      "throughput_x": 5.1,
+      "detected_language": "ja",
+      "language_probability": 0.9738,
+      "expected_language": "ja",
+      "language_correct": true,
+      "segment_count": 364,
+      "total_word_count": 2175,
+      "transcript_excerpt": [
+        {
+          "start": 11.34,
+          "end": 12.64,
+          "text": "どうもこんにちは",
+          "words": 3
+        },
+        {
+          "start": 13.68,
+          "end": 15.72,
+          "text": "それではただいまより",
+          "words": 6
+        },
+        {
+          "start": 15.72,
+          "end": 17.74,
+          "text": "設計セクを管理実施者向け",
+          "words": 12
+        }
+      ],
+      "mem_delta_mb": -1122.9,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "faster-whisper tiny"
+    },
+    {
+      "file": "Working_on_machine_noisy.mp4",
+      "sha256_prefix": "3d4303a67b790909",
+      "label": "Noisy Japanese construction (Pink Noise Injected)",
+      "engine": "faster-whisper",
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 0.7016,
+      "transcription_time_sec": 134.24,
+      "audio_duration_sec": 545.109,
+      "rtf": 0.2463,
+      "throughput_x": 4.06,
+      "detected_language": "ja",
+      "language_probability": 0.9872,
+      "expected_language": "ja",
+      "language_correct": true,
+      "segment_count": 394,
+      "total_word_count": 2069,
+      "transcript_excerpt": [
+        {
+          "start": 11.34,
+          "end": 12.22,
+          "text": "どうもこんにちは",
+          "words": 3
+        },
+        {
+          "start": 13.74,
+          "end": 15.62,
+          "text": "それではただいまより",
+          "words": 6
+        },
+        {
+          "start": 15.62,
+          "end": 19.86,
+          "text": "設計成功管理事実写向け安全衛生教育支援事業",
+          "words": 20
+        }
+      ],
+      "mem_delta_mb": 125.7,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "faster-whisper base"
+    },
+    {
+      "file": "Working_on_machine_noisy.mp4",
+      "sha256_prefix": "3d4303a67b790909",
+      "label": "Noisy Japanese construction (Pink Noise Injected)",
+      "engine": "whisperx",
+      "model_size": "base",
+      "compute_type": "int8",
+      "device": "cpu",
+      "load_time_sec": 0.862,
+      "transcription_time_sec": 257.3875,
+      "audio_duration_sec": 545.109,
+      "rtf": 0.4722,
+      "throughput_x": 2.12,
+      "detected_language": "ja",
+      "language_probability": 1.0,
+      "expected_language": "ja",
+      "language_correct": true,
+      "segment_count": 22,
+      "total_word_count": 3084,
+      "aligned_with_phonemes": true,
+      "transcript_excerpt": [
+        {
+          "start": 11.658,
+          "end": 28.385,
+          "text": "どうもこんにちは。それでは、ただいまより、設計成功管理事治者向け、安全衛生教育・支援事業、建設設計辺の工業を行います。私はロード安全衛生総合研究所のおかげと申します。よろしくお願いします。",
+          "words": 94
+        },
+        {
+          "start": 40.098,
+          "end": 61.376,
+          "text": "まずはじめにです。この講義なんですけれども、これまで建設現場の労働災害というものは、関係者の対魔の努力によって、この反省、9割近く見所してきました。ただ、今も、年間269年、これ、平成31年では概念ですけれども、269名もの等というのが違います。",
+          "words": 123
+        },
+        {
+          "start": 62.409,
+          "end": 85.49,
+          "text": "今後、検接現場の労働災害をさらに伝承させるためには、セコの上流側の設計段階での労働災害防止が求められます。コセ労働省では、第13時労働災害防止計画で、セコ段階の安全衛星に配慮した設計の普及を10点対策に軽がげる、セクタクを推進しています。",
+          "words": 119
+        }
+      ],
+      "mem_delta_mb": 1441.0,
+      "status": "PASS — REAL TESTED",
+      "errors": [],
+      "candidate": "WhisperX base"
+    }
+  ]
+}

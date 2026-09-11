@@ -1,0 +1,3 @@
+transcript_file,language,granularity,annotated_samples,mean_start_error_sec,mean_end_error_sec,acceptable_alignment_rate_pct,dataset_limitation
+test_instructional_normal_ffmpeg_16k_faster_whisper.json,en,word-level,7,0.389,0.577,57.14,Pilot Manual Ground-Truth (Small Dataset)
+const_01_ffmpeg_16k_faster_whisper.json,ja,token/character-level,2,0.04,0.015,50.0,Pilot Manual Ground-Truth (Small Dataset)

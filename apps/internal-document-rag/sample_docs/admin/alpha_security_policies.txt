@@ -1,0 +1,28 @@
+# Aetheris AI Systems — Internal Document Segment
+Document ID: MANUAL-AE-2026-V4.2-PART
+Confidentiality: Highly Restricted Internal
+
+## 10. IT Security Policy
+**Policy Number:** #IT-SEC-ALPHA-501. The protection of our source code, customer data, and proprietary AI models is critical to the survival of Aetheris AI Systems. All corporate systems must be accessed through secure channels. The corporate office Wi-Fi SSID is **Aetheris_Corp_Secure** (secured with WPA3 Enterprise). Under no circumstances should employee devices connect to unsecured public networks while conducting company business. For remote access, employees must establish a connection via our proprietary VPN endpoint: **seattle-vpn.aetheris.com**. Printing is managed securely; use printer **PR-AT-FL24-01** (located on the 24th floor) or **PR-AT-FL30-02** (located on the 30th floor) via badge-release authentication.
+
+
+
+## 11. Password Policy
+Passwords for all Aetheris corporate accounts must adhere to strict complexity requirements:
+1. Passwords must be a minimum of 16 characters in length.
+2. Must contain at least one uppercase letter, one lowercase letter, one numeric digit, and two special characters (e.g., @, #, $, %, ^, &).
+3. Passwords must not contain the employee's name, username, or common words.
+4. Passwords must be rotated every 90 days. Multi-Factor Authentication (MFA) via Duo Security is mandatory for all system logins and cannot be bypassed under any circumstances.
+
+
+
+## 12. Email Usage Policy
+Corporate email accounts (ending in `@aetheris.com`) are provided solely for business communications. Personal use should be kept to an absolute minimum. Email content is the property of Aetheris AI Systems and is subject to automated archiving and monitoring for security purposes. Sending confidential proprietary code, model weights, or personal customer data via email is strictly prohibited. Employees must use approved shared repositories or encrypted secure transfer tools for sharing sensitive information.
+
+
+
+## 13. Internet Usage Policy
+Employees are provided with high-speed internet access to facilitate research and product development. Browsing illegal, adult, or malicious websites is strictly prohibited. Downloading unapproved software or third-party executable packages onto company-issued laptops is blocked by our endpoint security agent, SentinelOne. Peer-to-peer (P2P) file sharing and torrenting are strictly banned on all corporate networks.
+
+
+

@@ -1,0 +1,458 @@
+{
+  "row": 2,
+  "name": "Video Validation & Metadata Extraction",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "D:\\company_projects\\RAG_Chatbot\\venv\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-24T09:58:46.275661+00:00"
+  },
+  "results": [
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "candidate": "ffprobe (ground truth)",
+      "version": "9.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.1424,
+      "metadata": {
+        "filename": "const_01.mp4",
+        "duration_sec": 545.12,
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 91471350
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {}
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0213,
+      "metadata": {
+        "filename": "const_01.mp4",
+        "duration_sec": 545.12,
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 91471350
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "candidate": "MediaInfo CLI",
+      "version": "MediaInfo Command line, \nMediaInfoLib - v26.05",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0877,
+      "metadata": {
+        "filename": "const_01.mp4",
+        "duration_sec": 545.12,
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "video_codec": "AVC",
+        "audio_codec": "AAC",
+        "file_size_bytes": 91471350
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 7,
+        "match_pct": 87.5,
+        "mismatches": {
+          "video_codec": {
+            "actual": "AVC",
+            "expected": "h264"
+          }
+        }
+      }
+    },
+    {
+      "file": "controlled_synthetic_corrupt.mp4",
+      "sha256_prefix": "aedc1548e7263fea",
+      "candidate": "ffprobe (ground truth)",
+      "version": "9.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0862,
+      "metadata": {
+        "filename": "controlled_synthetic_corrupt.mp4",
+        "duration_sec": 456.633,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 8812020
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {}
+    },
+    {
+      "file": "controlled_synthetic_corrupt.mp4",
+      "sha256_prefix": "aedc1548e7263fea",
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.012,
+      "metadata": {
+        "filename": "controlled_synthetic_corrupt.mp4",
+        "duration_sec": 456.633,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 8812020
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "controlled_synthetic_corrupt.mp4",
+      "sha256_prefix": "aedc1548e7263fea",
+      "candidate": "MediaInfo CLI",
+      "version": "MediaInfo Command line, \nMediaInfoLib - v26.05",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0871,
+      "metadata": {
+        "filename": "controlled_synthetic_corrupt.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "AVC",
+        "audio_codec": "AAC",
+        "file_size_bytes": 8812020
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 7,
+        "match_pct": 87.5,
+        "mismatches": {
+          "video_codec": {
+            "actual": "AVC",
+            "expected": "h264"
+          }
+        }
+      }
+    },
+    {
+      "file": "controlled_vfr_test.mp4",
+      "sha256_prefix": "ac6fe66c4a164dda",
+      "candidate": "ffprobe (ground truth)",
+      "version": "9.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.1212,
+      "metadata": {
+        "filename": "controlled_vfr_test.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 24837516
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {}
+    },
+    {
+      "file": "controlled_vfr_test.mp4",
+      "sha256_prefix": "ac6fe66c4a164dda",
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0167,
+      "metadata": {
+        "filename": "controlled_vfr_test.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 24837516
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "controlled_vfr_test.mp4",
+      "sha256_prefix": "ac6fe66c4a164dda",
+      "candidate": "MediaInfo CLI",
+      "version": "MediaInfo Command line, \nMediaInfoLib - v26.05",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.1057,
+      "metadata": {
+        "filename": "controlled_vfr_test.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "AVC",
+        "audio_codec": "AAC",
+        "file_size_bytes": 24837516
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 7,
+        "match_pct": 87.5,
+        "mismatches": {
+          "video_codec": {
+            "actual": "AVC",
+            "expected": "h264"
+          }
+        }
+      }
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "candidate": "ffprobe (ground truth)",
+      "version": "9.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.1015,
+      "metadata": {
+        "filename": "test_instructional_normal.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 29373403
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {}
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0178,
+      "metadata": {
+        "filename": "test_instructional_normal.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 29373403
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "candidate": "MediaInfo CLI",
+      "version": "MediaInfo Command line, \nMediaInfoLib - v26.05",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0795,
+      "metadata": {
+        "filename": "test_instructional_normal.mp4",
+        "duration_sec": 456.62,
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "video_codec": "AVC",
+        "audio_codec": "AAC",
+        "file_size_bytes": 29373403
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 7,
+        "match_pct": 87.5,
+        "mismatches": {
+          "video_codec": {
+            "actual": "AVC",
+            "expected": "h264"
+          }
+        }
+      }
+    },
+    {
+      "file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "sha256_prefix": "1410a085f132f9a3",
+      "candidate": "ffprobe (ground truth)",
+      "version": "9.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0692,
+      "metadata": {
+        "filename": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+        "duration_sec": 220.294,
+        "width": 320,
+        "height": 240,
+        "fps": 29.97,
+        "video_codec": "vp9",
+        "audio_codec": "opus",
+        "file_size_bytes": 9629943
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {}
+    },
+    {
+      "file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "sha256_prefix": "1410a085f132f9a3",
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0032,
+      "metadata": {
+        "filename": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+        "duration_sec": 220.294,
+        "width": 320,
+        "height": 240,
+        "fps": 29.97,
+        "video_codec": "vp9",
+        "audio_codec": "opus",
+        "file_size_bytes": 9629943
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+      "sha256_prefix": "1410a085f132f9a3",
+      "candidate": "MediaInfo CLI",
+      "version": "MediaInfo Command line, \nMediaInfoLib - v26.05",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.2156,
+      "metadata": {
+        "filename": "Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm",
+        "duration_sec": 220.294,
+        "width": 320,
+        "height": 240,
+        "fps": 29.97,
+        "video_codec": "VP9",
+        "audio_codec": "Opus",
+        "file_size_bytes": 9629943
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "Working on machine.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "candidate": "ffprobe (ground truth)",
+      "version": "9.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0822,
+      "metadata": {
+        "filename": "Working on machine.mp4",
+        "duration_sec": 545.12,
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 91471350
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {}
+    },
+    {
+      "file": "Working on machine.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "candidate": "PyAV",
+      "version": "18.1.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0166,
+      "metadata": {
+        "filename": "Working on machine.mp4",
+        "duration_sec": 545.12,
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "file_size_bytes": 91471350
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 8,
+        "match_pct": 100.0,
+        "mismatches": {}
+      }
+    },
+    {
+      "file": "Working on machine.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "candidate": "MediaInfo CLI",
+      "version": "MediaInfo Command line, \nMediaInfoLib - v26.05",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0598,
+      "metadata": {
+        "filename": "Working on machine.mp4",
+        "duration_sec": 545.12,
+        "width": 640,
+        "height": 480,
+        "fps": 25.0,
+        "video_codec": "AVC",
+        "audio_codec": "AAC",
+        "file_size_bytes": 91471350
+      },
+      "errors": [],
+      "comparison_vs_ffprobe": {
+        "fields_checked": 8,
+        "matched": 7,
+        "match_pct": 87.5,
+        "mismatches": {
+          "video_codec": {
+            "actual": "AVC",
+            "expected": "h264"
+          }
+        }
+      }
+    }
+  ]
+}

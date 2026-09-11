@@ -1,0 +1,192 @@
+{
+  "row": 9,
+  "name": "Visual Information, Tool/Part & Action ID",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "C:\\Users\\Admin\\envs\\ragbot\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-26T06:09:21.884971+00:00"
+  },
+  "frames_tested": 4,
+  "results": [
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "OpenCV ORB+MSER",
+      "version": "5.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0597,
+      "keypoints_detected": 0,
+      "mser_regions": 0,
+      "edge_density": 0.0,
+      "note": "Feature detection for local scene changes; no semantic class labels without weights",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "YOLOv8n (COCO pretrained)",
+      "version": "8.4.127",
+      "status": "PARTIAL",
+      "elapsed_sec": 2.7894,
+      "objects_detected": 0,
+      "detected_classes": [],
+      "detections": [],
+      "keywords_found": 0,
+      "keywords_expected": 3,
+      "note": "COCO 80-class pretrained weights on CPU; detects general classes (person, tie)",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "Gemini VLM",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.6367,
+      "objects_detected": 0,
+      "response": {},
+      "keywords_found": 0,
+      "keywords_expected": 3,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "OpenCV ORB+MSER",
+      "version": "5.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 1.547,
+      "keypoints_detected": 221,
+      "mser_regions": 2,
+      "edge_density": 2.782,
+      "note": "Feature detection for local scene changes; no semantic class labels without weights",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "YOLOv8n (COCO pretrained)",
+      "version": "8.4.127",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.6899,
+      "objects_detected": 2,
+      "detected_classes": [
+        "person",
+        "tie"
+      ],
+      "detections": [
+        {
+          "class_id": 0,
+          "name": "person",
+          "confidence": 0.8171
+        },
+        {
+          "class_id": 27,
+          "name": "tie",
+          "confidence": 0.7328
+        }
+      ],
+      "keywords_found": 2,
+      "keywords_expected": 5,
+      "note": "COCO 80-class pretrained weights on CPU; detects general classes (person, tie)",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "Gemini VLM",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.6197,
+      "objects_detected": 0,
+      "response": {},
+      "keywords_found": 0,
+      "keywords_expected": 5,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "OpenCV ORB+MSER",
+      "version": "5.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.1149,
+      "keypoints_detected": 500,
+      "mser_regions": 25,
+      "edge_density": 19.027,
+      "note": "Feature detection for local scene changes; no semantic class labels without weights",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "YOLOv8n (COCO pretrained)",
+      "version": "8.4.127",
+      "status": "PARTIAL",
+      "elapsed_sec": 0.4613,
+      "objects_detected": 0,
+      "detected_classes": [],
+      "detections": [],
+      "keywords_found": 0,
+      "keywords_expected": 4,
+      "note": "COCO 80-class pretrained weights on CPU; detects general classes (person, tie)",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "Gemini VLM",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.5281,
+      "objects_detected": 0,
+      "response": {},
+      "keywords_found": 0,
+      "keywords_expected": 4,
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "OpenCV ORB+MSER",
+      "version": "5.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0976,
+      "keypoints_detected": 500,
+      "mser_regions": 3,
+      "edge_density": 4.734,
+      "note": "Feature detection for local scene changes; no semantic class labels without weights",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "YOLOv8n (COCO pretrained)",
+      "version": "8.4.127",
+      "status": "PARTIAL",
+      "elapsed_sec": 0.5313,
+      "objects_detected": 0,
+      "detected_classes": [],
+      "detections": [],
+      "keywords_found": 0,
+      "keywords_expected": 3,
+      "note": "COCO 80-class pretrained weights on CPU; detects general classes (person, tie)",
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "Gemini VLM",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.4427,
+      "objects_detected": 0,
+      "response": {},
+      "keywords_found": 0,
+      "keywords_expected": 3,
+      "errors": []
+    }
+  ]
+}

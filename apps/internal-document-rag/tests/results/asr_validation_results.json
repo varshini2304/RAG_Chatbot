@@ -1,0 +1,159 @@
+{
+  "date": "10/09/2026",
+  "task": "Final word-level timestamp synchronization and structured Step-ready output",
+  "objective": "Word-Level Timestamp Validation & Step-Ready Synchronization Output",
+  "input_type": "raw_video",
+  "input_file": "const_01.mp4",
+  "asr_model": "base",
+  "faster_whisper_version": "1.2.1",
+  "ctranslate2_version": "4.8.1",
+  "device": "cpu",
+  "compute_type": "int8",
+  "output_schema": {
+    "word": "str",
+    "start": "float",
+    "end": "float",
+    "confidence": "float"
+  },
+  "word_count": 2207,
+  "segment_count": 290,
+  "schema_validation": "PASS",
+  "step4_contract_validation": "PASS",
+  "end_to_end_test": "PASS",
+  "result": "PASS",
+  "end_to_end_pipeline_details": {
+    "input_video": "const_01.mp4",
+    "gatekeeper_validation": "PASS",
+    "extracted_audio_duration_sec": 545.109,
+    "inference_time_sec": 122.8479,
+    "rtf": 0.2254,
+    "throughput_x": 4.44,
+    "detected_language": "ja",
+    "language_probability": 0.9839,
+    "sample_words": [
+      {
+        "word": "どう",
+        "start": 11.34,
+        "end": 11.78,
+        "confidence": 0.3202
+      },
+      {
+        "word": "も",
+        "start": 11.78,
+        "end": 11.88,
+        "confidence": 0.9751
+      },
+      {
+        "word": "こんにちは",
+        "start": 11.88,
+        "end": 12.2,
+        "confidence": 0.8682
+      },
+      {
+        "word": "それ",
+        "start": 12.2,
+        "end": 13.96,
+        "confidence": 0.0886
+      },
+      {
+        "word": "では",
+        "start": 13.96,
+        "end": 14.22,
+        "confidence": 0.9964
+      },
+      {
+        "word": "ただ",
+        "start": 14.22,
+        "end": 14.46,
+        "confidence": 0.3089
+      },
+      {
+        "word": "い",
+        "start": 14.46,
+        "end": 14.62,
+        "confidence": 0.8967
+      },
+      {
+        "word": "ま",
+        "start": 14.62,
+        "end": 14.7,
+        "confidence": 0.9642
+      },
+      {
+        "word": "よ",
+        "start": 14.7,
+        "end": 14.82,
+        "confidence": 0.95
+      },
+      {
+        "word": "り",
+        "start": 14.82,
+        "end": 15.46,
+        "confidence": 0.9975
+      }
+    ]
+  },
+  "row05_benchmark": {
+    "test_count": 2,
+    "passed_count": 2,
+    "status": "PASS",
+    "clean_rtf": 0.1283,
+    "noisy_rtf": 0.1247
+  },
+  "row06_japanese_benchmark": {
+    "fixture": "const_01.mp4",
+    "test_count": 2,
+    "matched_count": 2,
+    "within_tolerance_count": 2,
+    "baseline_accuracy_pct": 100.0,
+    "measured_accuracy_pct": 100.0,
+    "difference_from_baseline": 0.0,
+    "mean_start_error_sec": 0.15,
+    "mean_end_error_sec": 0.035,
+    "status": "PASS",
+    "details": [
+      {
+        "phrase": "こんにちは",
+        "expected_start": 11.85,
+        "expected_end": 12.2,
+        "actual_start": 11.88,
+        "actual_end": 12.18,
+        "start_error_sec": 0.03,
+        "end_error_sec": 0.02,
+        "within_tolerance": true,
+        "status": "PASS"
+      },
+      {
+        "phrase": "それでは",
+        "expected_start": 13.65,
+        "expected_end": 14.15,
+        "actual_start": 13.92,
+        "actual_end": 14.2,
+        "start_error_sec": 0.27,
+        "end_error_sec": 0.05,
+        "within_tolerance": true,
+        "status": "PASS"
+      }
+    ]
+  },
+  "english_regression": {
+    "fixture": "test_instructional_normal.mp4",
+    "row06_test_count": 7,
+    "row06_within_tolerance": 4,
+    "row06_baseline_accuracy_pct": 57.1,
+    "row06_measured_accuracy_pct": 57.14,
+    "difference_from_baseline": 0.04,
+    "mean_start_error_sec": 0.3857,
+    "mean_end_error_sec": 0.5743,
+    "status": "PASS"
+  },
+  "lifecycle_telemetry": {
+    "model_load_time_sec": 0.9656,
+    "warmup_time_sec": 1.0863
+  },
+  "remaining_limitations_status": {
+    "limitation_1_vfr_validation": "PENDING (VFR PTS/audio alignment)",
+    "limitation_2_wer_cer_evaluation": "PENDING (requires verified transcription ground truth)",
+    "limitation_3_timestamp_alignment_ground_truth": "PENDING (expanded ground truth required)"
+  }
+}

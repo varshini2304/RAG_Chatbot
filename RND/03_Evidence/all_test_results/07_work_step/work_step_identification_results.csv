@@ -1,0 +1,10 @@
+transcript,language,candidate,status,step_count,elapsed_sec,error
+const_01_ffmpeg_16k_faster_whisper.json,ja,Heuristic Pause/Marker,PASS — REAL TESTED,23,0.0014,
+const_01_ffmpeg_16k_faster_whisper.json,ja,Rule-based Structured,PASS — REAL TESTED,20,0.003,
+const_01_ffmpeg_16k_faster_whisper.json,ja,LLM (Groq llama-3.3-70b),PASS — REAL TESTED,3,15.0098,
+controlled_synthetic_corrupt_ffmpeg_16k_faster_whisper.json,en,Heuristic Pause/Marker,PASS — REAL TESTED,3,0.0003,
+controlled_synthetic_corrupt_ffmpeg_16k_faster_whisper.json,en,Rule-based Structured,PASS — REAL TESTED,6,0.1014,
+controlled_synthetic_corrupt_ffmpeg_16k_faster_whisper.json,en,LLM (Groq llama-3.3-70b),PASS — REAL TESTED,1,13.411,
+controlled_vfr_test_ffmpeg_16k_faster_whisper.json,en,Heuristic Pause/Marker,PASS — REAL TESTED,13,0.0006,
+controlled_vfr_test_ffmpeg_16k_faster_whisper.json,en,Rule-based Structured,PASS — REAL TESTED,18,0.0002,
+controlled_vfr_test_ffmpeg_16k_faster_whisper.json,en,LLM (Groq llama-3.3-70b),PASS — REAL TESTED,1,12.2871,

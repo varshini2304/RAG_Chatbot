@@ -1,0 +1,29 @@
+
+======================================================================
+  ROW 09 — Visual Information, Tool/Part & Action ID
+  Started: 2026-08-26T06:09:21.731854+00:00
+  Environment: C:\Users\Admin\envs\ragbot\Scripts\python.exe (Python 3.11.0)
+======================================================================
+  Found 4 keyframes: ['OpenCV_ts_0.0s.jpg', 'OpenCV_ts_10.0s.jpg', 'OpenCV_ts_272.6s.jpg', 'OpenCV_ts_544.1s.jpg']
+
+  Frame: OpenCV_ts_0.0s.jpg  SHA256:804d5dcd9e5f52ef...
+    [✓] OpenCV ORB+MSER                objs=0 elapsed=0.0597s
+    [~] YOLOv8n (COCO pretrained)      objs=0 elapsed=2.7894s
+    [✗] Gemini VLM                     objs=0 elapsed=0.6367s
+
+  Frame: OpenCV_ts_10.0s.jpg  SHA256:7c8e04554bb7bf31...
+    [✓] OpenCV ORB+MSER                objs=221 elapsed=1.547s
+    [✓] YOLOv8n (COCO pretrained)      objs=2 elapsed=0.6899s
+    [✗] Gemini VLM                     objs=0 elapsed=0.6197s
+
+  Frame: OpenCV_ts_272.6s.jpg  SHA256:4c7c4a09044dd3cb...
+    [✓] OpenCV ORB+MSER                objs=500 elapsed=0.1149s
+    [~] YOLOv8n (COCO pretrained)      objs=0 elapsed=0.4613s
+    [✗] Gemini VLM                     objs=0 elapsed=0.5281s
+
+  Frame: OpenCV_ts_544.1s.jpg  SHA256:01933032f0746f16...
+    [✓] OpenCV ORB+MSER                objs=500 elapsed=0.0976s
+    [~] YOLOv8n (COCO pretrained)      objs=0 elapsed=0.5313s
+    [✗] Gemini VLM                     objs=0 elapsed=0.4427s
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\09_visual_information\visual_information_results_new.json
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\09_visual_information\visual_information_results_new.csv

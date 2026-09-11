@@ -1,0 +1,38 @@
+
+======================================================================
+  ROW 04 — Visual Processing / Frame Seeking
+  Started: 2026-08-24T11:24:07.971049+00:00
+  Environment: C:\Python314\python.exe (Python 3.14.5)
+======================================================================
+
+  File: const_01.mp4  duration=545.1s  seeks=[0.0, 54.51, 136.28, 272.56, 408.84, 490.61]
+    [~] PyAV            PARTIAL                        success=83.3%
+    [✓] TorchCodec      PASS — REAL TESTED             success=100.0%
+    [✓] OpenCV          PASS — REAL TESTED             success=100.0%
+
+  File: controlled_synthetic_corrupt.mp4  duration=456.6s  seeks=[0.0, 45.66, 114.16, 228.32, 342.47, 410.97]
+    [~] PyAV            PARTIAL                        success=16.7%
+    [~] TorchCodec      PARTIAL                        success=33.3%
+    [✓] OpenCV          PASS — REAL TESTED             success=100.0%
+
+  File: controlled_vfr_test.mp4  duration=456.6s  seeks=[0.0, 45.66, 114.16, 228.31, 342.47, 410.96]
+    [~] PyAV            PARTIAL                        success=16.7%
+    [~] TorchCodec      PARTIAL                        success=66.7%
+    [✓] OpenCV          PASS — REAL TESTED             success=100.0%
+
+  File: test_instructional_normal.mp4  duration=456.6s  seeks=[0.0, 45.66, 114.16, 228.31, 342.47, 410.96]
+    [~] PyAV            PARTIAL                        success=33.3%
+    [✓] TorchCodec      PASS — REAL TESTED             success=100.0%
+    [✓] OpenCV          PASS — REAL TESTED             success=100.0%
+
+  File: Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm  duration=220.3s  seeks=[0.0, 22.03, 55.07, 110.15, 165.22, 198.26]
+    [~] PyAV            PARTIAL                        success=16.7%
+    [~] TorchCodec      PARTIAL                        success=83.3%
+    [✓] OpenCV          PASS — REAL TESTED             success=100.0%
+
+  File: Working on machine.mp4  duration=545.1s  seeks=[0.0, 54.51, 136.28, 272.56, 408.84, 490.61]
+    [~] PyAV            PARTIAL                        success=83.3%
+    [✓] TorchCodec      PASS — REAL TESTED             success=100.0%
+    [✓] OpenCV          PASS — REAL TESTED             success=100.0%
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\04_visual_processing\frame_seeking_results.json
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\04_visual_processing\frame_seeking_results.csv

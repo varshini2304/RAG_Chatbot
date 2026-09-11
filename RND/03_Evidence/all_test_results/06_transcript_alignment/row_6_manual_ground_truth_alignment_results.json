@@ -1,0 +1,158 @@
+{
+  "pilot_ground_truth_audit": {
+    "test_instructional_normal_ffmpeg_16k_faster_whisper.json": {
+      "candidate": "faster-whisper Native Timestamps",
+      "transcript_file": "test_instructional_normal_ffmpeg_16k_faster_whisper.json",
+      "language": "en",
+      "timestamp_granularity": "word-level",
+      "dataset_type": "Pilot Manual Ground-Truth (Small Dataset)",
+      "annotated_samples_count": 7,
+      "mean_start_error_sec": 0.389,
+      "mean_end_error_sec": 0.577,
+      "alignment_coverage_pct": 100.0,
+      "acceptable_alignment_rate_pct": 57.14,
+      "evaluated_details": [
+        {
+          "phrase": "Today",
+          "expected_window": [
+            0.0,
+            0.35
+          ],
+          "asr_window": [
+            0.0,
+            0.36
+          ],
+          "start_error_sec": 0.0,
+          "end_error_sec": 0.01,
+          "acceptable_within_0.5s": true
+        },
+        {
+          "phrase": "talk",
+          "expected_window": [
+            0.65,
+            0.9
+          ],
+          "asr_window": [
+            0.68,
+            0.9
+          ],
+          "start_error_sec": 0.03,
+          "end_error_sec": 0.0,
+          "acceptable_within_0.5s": true
+        },
+        {
+          "phrase": "basic",
+          "expected_window": [
+            0.95,
+            1.25
+          ],
+          "asr_window": [
+            1.2,
+            1.64
+          ],
+          "start_error_sec": 0.25,
+          "end_error_sec": 0.39,
+          "acceptable_within_0.5s": true
+        },
+        {
+          "phrase": "mill",
+          "expected_window": [
+            1.3,
+            1.55
+          ],
+          "asr_window": [
+            1.64,
+            2.04
+          ],
+          "start_error_sec": 0.34,
+          "end_error_sec": 0.49,
+          "acceptable_within_0.5s": true
+        },
+        {
+          "phrase": "safety",
+          "expected_window": [
+            1.6,
+            2.05
+          ],
+          "asr_window": [
+            2.04,
+            2.62
+          ],
+          "start_error_sec": 0.44,
+          "end_error_sec": 0.57,
+          "acceptable_within_0.5s": false
+        },
+        {
+          "phrase": "and",
+          "expected_window": [
+            2.1,
+            2.25
+          ],
+          "asr_window": [
+            2.62,
+            3.44
+          ],
+          "start_error_sec": 0.52,
+          "end_error_sec": 1.19,
+          "acceptable_within_0.5s": false
+        },
+        {
+          "phrase": "operation",
+          "expected_window": [
+            2.3,
+            2.85
+          ],
+          "asr_window": [
+            3.44,
+            4.24
+          ],
+          "start_error_sec": 1.14,
+          "end_error_sec": 1.39,
+          "acceptable_within_0.5s": false
+        }
+      ]
+    },
+    "const_01_ffmpeg_16k_faster_whisper.json": {
+      "candidate": "faster-whisper Native Timestamps",
+      "transcript_file": "const_01_ffmpeg_16k_faster_whisper.json",
+      "language": "ja",
+      "timestamp_granularity": "token/character-level",
+      "dataset_type": "Pilot Manual Ground-Truth (Small Dataset)",
+      "annotated_samples_count": 2,
+      "mean_start_error_sec": 0.04,
+      "mean_end_error_sec": 0.015,
+      "alignment_coverage_pct": 100.0,
+      "acceptable_alignment_rate_pct": 50.0,
+      "evaluated_details": [
+        {
+          "phrase": "\u3053\u3093\u306b\u3061\u306f",
+          "expected_window": [
+            11.85,
+            12.2
+          ],
+          "asr_window": [
+            11.88,
+            12.18
+          ],
+          "start_error_sec": 0.03,
+          "end_error_sec": 0.02,
+          "acceptable_within_0.5s": true
+        },
+        {
+          "phrase": "\u305d\u308c\u3067\u306f",
+          "expected_window": [
+            13.65,
+            14.15
+          ],
+          "asr_window": [
+            13.7,
+            14.14
+          ],
+          "start_error_sec": 0.05,
+          "end_error_sec": 0.01,
+          "acceptable_within_0.5s": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+======================================================================
+  ROW 10 — Safety, Warnings & Checkpoint Detection
+  Started: 2026-08-26T10:37:31.598851+00:00
+  Environment: C:\Users\Admin\envs\ragbot\Scripts\python.exe (Python 3.11.0)
+======================================================================
+
+  Frame: OpenCV_ts_0.0s.jpg
+    [✓] Rule-based Keyword Engine           acc=100.0% (3/3)
+    [✗] Evidence-Grounded VLM (Gemini)      acc=   N/A (0/0)
+    [✓] VLM + Rule Hybrid                   acc=100.0% (3/3)
+
+  Frame: OpenCV_ts_10.0s.jpg
+    [✓] Rule-based Keyword Engine           acc=100.0% (3/3)
+    [✗] Evidence-Grounded VLM (Gemini)      acc=   N/A (0/0)
+    [✓] VLM + Rule Hybrid                   acc=100.0% (3/3)
+
+  Frame: OpenCV_ts_272.6s.jpg
+    [✓] Rule-based Keyword Engine           acc=100.0% (3/3)
+    [✗] Evidence-Grounded VLM (Gemini)      acc=   N/A (0/0)
+    [✓] VLM + Rule Hybrid                   acc=100.0% (3/3)
+
+  Frame: OpenCV_ts_544.1s.jpg
+    [✓] Rule-based Keyword Engine           acc=100.0% (3/3)
+    [✗] Evidence-Grounded VLM (Gemini)      acc=   N/A (0/0)
+    [✓] VLM + Rule Hybrid                   acc=100.0% (3/3)
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\10_safety_detection\safety_detection_results_new.json
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\10_safety_detection\safety_detection_results_new.csv
+

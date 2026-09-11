@@ -1,0 +1,26 @@
+
+======================================================================
+  ROW 07 — Work-Step Identification & Time Windows
+  Started: 2026-08-25T08:17:42.963855+00:00
+  Environment: C:\Users\Admin\envs\ragbot\Scripts\python.exe (Python 3.11.0)
+======================================================================
+
+  Transcript: const_01_ffmpeg_16k_faster_whisper.json  segments=347
+    [✓] Heuristic: 23 steps in 0.0014s
+    [✓] Rule-based: 20 steps in 0.0030s
+    Testing LLM (Groq llama-3.3-70b)...
+    [✓] LLM (Groq): 3 steps in 15.0098s  err=None
+
+  Transcript: controlled_synthetic_corrupt_ffmpeg_16k_faster_whisper.json  segments=18
+    [✓] Heuristic: 3 steps in 0.0003s
+    [✓] Rule-based: 6 steps in 0.1014s
+    Testing LLM (Groq llama-3.3-70b)...
+    [✓] LLM (Groq): 1 steps in 13.4110s  err=None
+
+  Transcript: controlled_vfr_test_ffmpeg_16k_faster_whisper.json  segments=51
+    [✓] Heuristic: 13 steps in 0.0006s
+    [✓] Rule-based: 18 steps in 0.0002s
+    Testing LLM (Groq llama-3.3-70b)...
+    [✓] LLM (Groq): 1 steps in 12.2871s  err=None
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\07_work_step\work_step_identification_results.json
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\07_work_step\work_step_identification_results.csv

@@ -1,0 +1,401 @@
+{
+  "row": 10,
+  "name": "Safety, Warnings & Checkpoint Detection",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "C:\\Users\\Admin\\envs\\ragbot\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-26T10:37:33.406117+00:00"
+  },
+  "results": [
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "Rule-based Keyword Engine",
+      "version": "1.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-01",
+          "claim": "Worker is wearing a safety helmet",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-02",
+          "claim": "Worker is wearing a safety harness",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-03",
+          "claim": "No fall protection visible",
+          "expected": true,
+          "evidence_type": "visual",
+          "predicted": true,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "Evidence-Grounded VLM (Gemini)",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.3427,
+      "claims_evaluated": 0,
+      "correct": 0,
+      "accuracy_pct": null,
+      "results": [],
+      "errors": [
+        "Client error '429 Too Many Requests' (API rate/quota limit reached)"
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_0.0s.jpg",
+      "sha256_prefix": "804d5dcd9e5f52ef",
+      "candidate": "VLM + Rule Hybrid",
+      "version": "composite",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-01",
+          "claim": "Worker is wearing a safety helmet",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "claim_id": "S-02",
+          "claim": "Worker is wearing a safety harness",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "claim_id": "S-03",
+          "claim": "No fall protection visible",
+          "expected": true,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": true,
+          "correct": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "Rule-based Keyword Engine",
+      "version": "1.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-04",
+          "claim": "Worker is wearing a safety helmet",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-05",
+          "claim": "Presenter is wearing formal attire with a tie",
+          "expected": true,
+          "evidence_type": "visual",
+          "predicted": true,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-06",
+          "claim": "Worker is wearing high-voltage protective gloves",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "Evidence-Grounded VLM (Gemini)",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.3651,
+      "claims_evaluated": 0,
+      "correct": 0,
+      "accuracy_pct": null,
+      "results": [],
+      "errors": [
+        "Client error '429 Too Many Requests' (API rate/quota limit reached)"
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_10.0s.jpg",
+      "sha256_prefix": "7c8e04554bb7bf31",
+      "candidate": "VLM + Rule Hybrid",
+      "version": "composite",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-04",
+          "claim": "Worker is wearing a safety helmet",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "claim_id": "S-05",
+          "claim": "Presenter is wearing formal attire with a tie",
+          "expected": true,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "claim_id": "S-06",
+          "claim": "Worker is wearing high-voltage protective gloves",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "Rule-based Keyword Engine",
+      "version": "1.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-07",
+          "claim": "Slide displays instructional diagram or text",
+          "expected": true,
+          "evidence_type": "visual",
+          "predicted": true,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-08",
+          "claim": "Operator is actively cutting metal with milling cutter",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-09",
+          "claim": "Worker is wearing safety goggles",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "Evidence-Grounded VLM (Gemini)",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.5866,
+      "claims_evaluated": 0,
+      "correct": 0,
+      "accuracy_pct": null,
+      "results": [],
+      "errors": [
+        "Client error '429 Too Many Requests' (API rate/quota limit reached)"
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_272.6s.jpg",
+      "sha256_prefix": "4c7c4a09044dd3cb",
+      "candidate": "VLM + Rule Hybrid",
+      "version": "composite",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-07",
+          "claim": "Slide displays instructional diagram or text",
+          "expected": true,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "claim_id": "S-08",
+          "claim": "Operator is actively cutting metal with milling cutter",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "claim_id": "S-09",
+          "claim": "Worker is wearing safety goggles",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "Rule-based Keyword Engine",
+      "version": "1.0.0",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-10",
+          "claim": "Slide displays summary presentation text",
+          "expected": true,
+          "evidence_type": "visual",
+          "predicted": true,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-11",
+          "claim": "Heavy industrial machine actively rotating without guard",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        },
+        {
+          "claim_id": "S-12",
+          "claim": "Operator is wearing ear protection earmuffs",
+          "expected": false,
+          "evidence_type": "visual",
+          "predicted": false,
+          "correct": true,
+          "evidence": "Deterministic claim text analysis (Rule Engine)"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "Evidence-Grounded VLM (Gemini)",
+      "version": "gemini-2.5-flash",
+      "status": "FAIL — REAL TESTED",
+      "elapsed_sec": 0.2981,
+      "claims_evaluated": 0,
+      "correct": 0,
+      "accuracy_pct": null,
+      "results": [],
+      "errors": [
+        "Client error '429 Too Many Requests' (API rate/quota limit reached)"
+      ]
+    },
+    {
+      "frame": "OpenCV_ts_544.1s.jpg",
+      "sha256_prefix": "01933032f0746f16",
+      "candidate": "VLM + Rule Hybrid",
+      "version": "composite",
+      "status": "PASS — REAL TESTED",
+      "elapsed_sec": 0.0,
+      "claims_evaluated": 3,
+      "correct": 3,
+      "accuracy_pct": 100.0,
+      "results": [
+        {
+          "claim_id": "S-10",
+          "claim": "Slide displays summary presentation text",
+          "expected": true,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": true,
+          "correct": true
+        },
+        {
+          "claim_id": "S-11",
+          "claim": "Heavy industrial machine actively rotating without guard",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        },
+        {
+          "claim_id": "S-12",
+          "claim": "Operator is wearing ear protection earmuffs",
+          "expected": false,
+          "evidence_type": "visual",
+          "source": "Rule",
+          "predicted": false,
+          "correct": true
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

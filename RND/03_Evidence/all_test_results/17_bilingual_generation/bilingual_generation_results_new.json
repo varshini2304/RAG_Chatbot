@@ -1,0 +1,77 @@
+{
+  "row": 17,
+  "name": "Bilingual Work Instruction Generation",
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "C:\\Users\\Admin\\envs\\ragbot\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-26T04:44:22.770385+00:00"
+  },
+  "input_step": {
+    "step": 1,
+    "source_video": "test_instructional_normal.mp4",
+    "transcript_excerpt": "Ensure the spindle is rotating clockwise at 2800 RPM before engaging the workpiece.",
+    "rag_evidence": "milling_machine_operating_manual.pdf: Maximum RPM 1800; operator must engage emergency stop before workpiece contact.",
+    "frame": "OpenCV_ts_0.0s.jpg"
+  },
+  "results": [
+    {
+      "candidate": "Direct Bilingual (gemini-2.5-flash)",
+      "version": "gemini-2.5-flash",
+      "status": "PARTIAL",
+      "elapsed_sec": 10.23,
+      "result": {
+        "raw": "```json\n{\n  \"step_en\": \"Ensure the spindle is rotating clockwise at 1800 RPM before engaging the workpiece.\",\n  \"step_ja\": \""
+      },
+      "has_both_languages": false,
+      "fact_drift_detected": false,
+      "conflict_noted": null,
+      "input_step": {
+        "step": 1,
+        "source_video": "test_instructional_normal.mp4",
+        "transcript_excerpt": "Ensure the spindle is rotating clockwise at 2800 RPM before engaging the workpiece.",
+        "rag_evidence": "milling_machine_operating_manual.pdf: Maximum RPM 1800; operator must engage emergency stop before workpiece contact.",
+        "frame": "OpenCV_ts_0.0s.jpg"
+      }
+    },
+    {
+      "candidate": "EN-first then Translate (groq:openai/gpt-oss-120b)",
+      "version": "groq:openai/gpt-oss-120b",
+      "status": "PASS — REAL TESTED",
+      "total_elapsed_sec": 4.6034,
+      "result": {
+        "step_en": "Ensure the spindle is rotating clockwise at 1800 RPM before engaging the workpiece.",
+        "step_ja": "作業対象を取り付ける前に、スピンドルが時計回りに1800 RPMで回転していることを確認する。"
+      },
+      "has_both_languages": true,
+      "input_step": {
+        "step": 1,
+        "source_video": "test_instructional_normal.mp4",
+        "transcript_excerpt": "Ensure the spindle is rotating clockwise at 2800 RPM before engaging the workpiece.",
+        "rag_evidence": "milling_machine_operating_manual.pdf: Maximum RPM 1800; operator must engage emergency stop before workpiece contact.",
+        "frame": "OpenCV_ts_0.0s.jpg"
+      }
+    },
+    {
+      "candidate": "EN-first + NLLB-200 Local MT (600M)",
+      "version": "facebook/nllb-200-distilled-600M",
+      "status": "PASS — REAL TESTED",
+      "total_elapsed_sec": 39.0954,
+      "translation_elapsed_sec": 37.8184,
+      "result": {
+        "step_en": "Ensure the spindle is rotating clockwise at 1800 RPM before engaging the workpiece.",
+        "step_ja": "作業部品を動かす前に,スピンダルは時計方向で 1800 RPMで回っていることを確認します."
+      },
+      "has_both_languages": true,
+      "note": "Local offline seq2seq translation",
+      "input_step": {
+        "step": 1,
+        "source_video": "test_instructional_normal.mp4",
+        "transcript_excerpt": "Ensure the spindle is rotating clockwise at 2800 RPM before engaging the workpiece.",
+        "rag_evidence": "milling_machine_operating_manual.pdf: Maximum RPM 1800; operator must engage emergency stop before workpiece contact.",
+        "frame": "OpenCV_ts_0.0s.jpg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Apex Healthcare & Wellness — Internal Document Segment
+Document ID: CLIN-APX-2026-V1.9-PART
+Confidentiality: Highly Restricted Internal
+
+## 10. IT Security Policy
+**Policy Number:** #IT-SEC-GAMMA-911. Protecting patient health information (PHI) is a legal requirement under HIPAA. Clinical networks must be protected from unauthorized access. The hospital Wi-Fi SSID is **Apex_Clinical_Net** (accessible via active staff credentials). Remote access to the Electronic Health Record (EHR) system is allowed only via the VPN endpoint: **chicago-vpn.apexhealth.org**. Printing patient records must be done via secured printers: **PR-AX-CLINIC-09** (in Complex A Ward 2) or **PR-AX-OUTPATIENT-02** (in Complex B lobby) using badge-release validation.
+
+
+
+## 11. Password Policy
+Passwords for all clinical systems must meet strict complexity rules to prevent patient data breaches:
+1. Passwords must be at least 15 characters in length.
+2. Must contain at least one uppercase letter, one lowercase letter, one number, and three special characters (e.g., !, ?, #, %, *).
+3. Passwords must not contain patient names, department names, or dictionary words.
+4. Passwords must be changed every 45 days. MFA via Microsoft Authenticator is mandatory for all access from outside the hospital network.
+
+
+
+## 12. Email Usage Policy
+Corporate email accounts (ending in `@apexhealth.org`) are provided for hospital communication. Sharing Patient Health Information (PHI) via email is strictly prohibited unless the email is encrypted using our secure email gateway (prefix the subject line with [SECURE]). Sending patient charts, lab results, or billing records to personal emails will result in immediate suspension pending HIPAA compliance investigation.
+
+
+
+## 13. Internet Usage Policy
+Internet access at Apex is monitored to ensure network reliability for medical devices. Streaming videos, online gaming, and social media sites are blocked. Downloading files or applications onto hospital workstations is blocked by our endpoint security agent, Carbon Black. Unapproved software or browser extensions are strictly forbidden on EHR terminals.
+
+
+

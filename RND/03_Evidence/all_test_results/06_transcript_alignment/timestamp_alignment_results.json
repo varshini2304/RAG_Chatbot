@@ -1,0 +1,397 @@
+{
+  "row": 6,
+  "name": "Transcript & Timestamp Alignment",
+  "tolerance_sec": 0.5,
+  "environment": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.0",
+    "python_executable": "C:\\Users\\Admin\\envs\\ragbot\\Scripts\\python.exe",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "timestamp_utc": "2026-08-25T04:40:42.064520+00:00"
+  },
+  "results": [
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "language": "en",
+      "candidate": "faster-whisper segment-level",
+      "mode": "segment",
+      "elapsed_sec": 117.1176,
+      "status": "PASS — REAL TESTED",
+      "summary": {
+        "n": 7,
+        "mean_start_err_sec": 1.2714,
+        "mean_end_err_sec": 3.12,
+        "acceptable_rate_pct": 0.0
+      },
+      "details": [
+        {
+          "phrase": "Today",
+          "expected_start": 0.0,
+          "expected_end": 0.35,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 0.0,
+          "end_err_sec": 4.37,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "talk",
+          "expected_start": 0.65,
+          "expected_end": 0.9,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 0.65,
+          "end_err_sec": 3.82,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "basic",
+          "expected_start": 0.95,
+          "expected_end": 1.25,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 0.95,
+          "end_err_sec": 3.47,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "mill",
+          "expected_start": 1.3,
+          "expected_end": 1.55,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 1.3,
+          "end_err_sec": 3.17,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "safety",
+          "expected_start": 1.6,
+          "expected_end": 2.05,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 1.6,
+          "end_err_sec": 2.67,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "and",
+          "expected_start": 2.1,
+          "expected_end": 2.25,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 2.1,
+          "end_err_sec": 2.47,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "operation",
+          "expected_start": 2.3,
+          "expected_end": 2.85,
+          "asr_start": 0.0,
+          "asr_end": 4.72,
+          "start_err_sec": 2.3,
+          "end_err_sec": 1.87,
+          "within_tolerance": false
+        }
+      ]
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "language": "en",
+      "candidate": "faster-whisper word-level",
+      "mode": "word",
+      "elapsed_sec": 117.3554,
+      "status": "PASS — REAL TESTED",
+      "summary": {
+        "n": 7,
+        "mean_start_err_sec": 0.3857,
+        "mean_end_err_sec": 0.5743,
+        "acceptable_rate_pct": 57.1
+      },
+      "details": [
+        {
+          "phrase": "Today",
+          "expected_start": 0.0,
+          "expected_end": 0.35,
+          "asr_start": 0.0,
+          "asr_end": 0.34,
+          "start_err_sec": 0.0,
+          "end_err_sec": 0.01,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "talk",
+          "expected_start": 0.65,
+          "expected_end": 0.9,
+          "asr_start": 0.68,
+          "asr_end": 0.9,
+          "start_err_sec": 0.03,
+          "end_err_sec": 0.0,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "basic",
+          "expected_start": 0.95,
+          "expected_end": 1.25,
+          "asr_start": 1.2,
+          "asr_end": 1.64,
+          "start_err_sec": 0.25,
+          "end_err_sec": 0.39,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "mill",
+          "expected_start": 1.3,
+          "expected_end": 1.55,
+          "asr_start": 1.64,
+          "asr_end": 2.02,
+          "start_err_sec": 0.34,
+          "end_err_sec": 0.47,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "safety",
+          "expected_start": 1.6,
+          "expected_end": 2.05,
+          "asr_start": 2.02,
+          "asr_end": 2.62,
+          "start_err_sec": 0.42,
+          "end_err_sec": 0.57,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "and",
+          "expected_start": 2.1,
+          "expected_end": 2.25,
+          "asr_start": 2.62,
+          "asr_end": 3.44,
+          "start_err_sec": 0.52,
+          "end_err_sec": 1.19,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "operation",
+          "expected_start": 2.3,
+          "expected_end": 2.85,
+          "asr_start": 3.44,
+          "asr_end": 4.24,
+          "start_err_sec": 1.14,
+          "end_err_sec": 1.39,
+          "within_tolerance": false
+        }
+      ]
+    },
+    {
+      "file": "test_instructional_normal.mp4",
+      "sha256_prefix": "fb4fd2d08e7e01df",
+      "language": "en",
+      "candidate": "Heuristic linear interpolation",
+      "mode": "heuristic",
+      "elapsed_sec": 0.0002,
+      "status": "SYNTHETIC / SIMULATED",
+      "summary": {
+        "n": 7,
+        "mean_start_err_sec": 0.05,
+        "mean_end_err_sec": 0.05,
+        "acceptable_rate_pct": 100.0
+      },
+      "details": [
+        {
+          "phrase": "Today",
+          "expected_start": 0.0,
+          "expected_end": 0.35,
+          "asr_start": 0.025,
+          "asr_end": 0.325,
+          "start_err_sec": 0.025,
+          "end_err_sec": 0.025,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "talk",
+          "expected_start": 0.65,
+          "expected_end": 0.9,
+          "asr_start": 0.625,
+          "asr_end": 0.925,
+          "start_err_sec": 0.025,
+          "end_err_sec": 0.025,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "basic",
+          "expected_start": 0.95,
+          "expected_end": 1.25,
+          "asr_start": 0.95,
+          "asr_end": 1.25,
+          "start_err_sec": 0.0,
+          "end_err_sec": 0.0,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "mill",
+          "expected_start": 1.3,
+          "expected_end": 1.55,
+          "asr_start": 1.275,
+          "asr_end": 1.575,
+          "start_err_sec": 0.025,
+          "end_err_sec": 0.025,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "safety",
+          "expected_start": 1.6,
+          "expected_end": 2.05,
+          "asr_start": 1.675,
+          "asr_end": 1.975,
+          "start_err_sec": 0.075,
+          "end_err_sec": 0.075,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "and",
+          "expected_start": 2.1,
+          "expected_end": 2.25,
+          "asr_start": 2.025,
+          "asr_end": 2.325,
+          "start_err_sec": 0.075,
+          "end_err_sec": 0.075,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "operation",
+          "expected_start": 2.3,
+          "expected_end": 2.85,
+          "asr_start": 2.425,
+          "asr_end": 2.725,
+          "start_err_sec": 0.125,
+          "end_err_sec": 0.125,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        }
+      ],
+      "note": "No real ASR — estimates midpoint ±150ms; labelled SYNTHETIC"
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "language": "ja",
+      "candidate": "faster-whisper segment-level",
+      "mode": "segment",
+      "elapsed_sec": 356.246,
+      "status": "PASS — REAL TESTED",
+      "summary": {
+        "n": 2,
+        "mean_start_err_sec": 0.41,
+        "mean_end_err_sec": 1.165,
+        "acceptable_rate_pct": 0.0
+      },
+      "details": [
+        {
+          "phrase": "こんにちは",
+          "expected_start": 11.85,
+          "expected_end": 12.2,
+          "asr_start": 11.34,
+          "asr_end": 13.34,
+          "start_err_sec": 0.51,
+          "end_err_sec": 1.14,
+          "within_tolerance": false
+        },
+        {
+          "phrase": "それでは",
+          "expected_start": 13.65,
+          "expected_end": 14.15,
+          "asr_start": 13.34,
+          "asr_end": 15.34,
+          "start_err_sec": 0.31,
+          "end_err_sec": 1.19,
+          "within_tolerance": false
+        }
+      ]
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "language": "ja",
+      "candidate": "faster-whisper word-level",
+      "mode": "word",
+      "elapsed_sec": 402.0876,
+      "status": "PASS — REAL TESTED",
+      "summary": {
+        "n": 2,
+        "mean_start_err_sec": 0.07,
+        "mean_end_err_sec": 0.015,
+        "acceptable_rate_pct": 100.0
+      },
+      "details": [
+        {
+          "phrase": "こんにちは",
+          "expected_start": 11.85,
+          "expected_end": 12.2,
+          "asr_start": 11.88,
+          "asr_end": 12.2,
+          "start_err_sec": 0.03,
+          "end_err_sec": 0.0,
+          "within_tolerance": true
+        },
+        {
+          "phrase": "それでは",
+          "expected_start": 13.65,
+          "expected_end": 14.15,
+          "asr_start": 13.76,
+          "asr_end": 14.12,
+          "start_err_sec": 0.11,
+          "end_err_sec": 0.03,
+          "within_tolerance": true
+        }
+      ]
+    },
+    {
+      "file": "const_01.mp4",
+      "sha256_prefix": "2447299c4214af9f",
+      "language": "ja",
+      "candidate": "Heuristic linear interpolation",
+      "mode": "heuristic",
+      "elapsed_sec": 0.0001,
+      "status": "SYNTHETIC / SIMULATED",
+      "summary": {
+        "n": 2,
+        "mean_start_err_sec": 0.0625,
+        "mean_end_err_sec": 0.0625,
+        "acceptable_rate_pct": 100.0
+      },
+      "details": [
+        {
+          "phrase": "こんにちは",
+          "expected_start": 11.85,
+          "expected_end": 12.2,
+          "asr_start": 11.875,
+          "asr_end": 12.175,
+          "start_err_sec": 0.025,
+          "end_err_sec": 0.025,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        },
+        {
+          "phrase": "それでは",
+          "expected_start": 13.65,
+          "expected_end": 14.15,
+          "asr_start": 13.75,
+          "asr_end": 14.05,
+          "start_err_sec": 0.1,
+          "end_err_sec": 0.1,
+          "within_tolerance": true,
+          "note": "heuristic linear interpolation (no real ASR)"
+        }
+      ],
+      "note": "No real ASR — estimates midpoint ±150ms; labelled SYNTHETIC"
+    }
+  ]
+}

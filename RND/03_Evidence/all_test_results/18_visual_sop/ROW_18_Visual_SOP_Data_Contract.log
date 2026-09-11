@@ -1,0 +1,10 @@
+
+======================================================================
+  ROW 18 — Visual SOP Generation & Traceability
+  Started: 2026-08-26T06:10:05.881983+00:00
+  Environment: C:\Users\Admin\envs\ragbot\Scripts\python.exe (Python 3.11.0)
+======================================================================
+  [✗] Multimodal LLM + Structured Schema (Gemini)        fields=0/7
+  [✓] Structured LLM (Groq GPT-OSS 120B text-grounded)   fields=7/7
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\18_visual_sop\visual_sop_results_new.json
+  [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\18_visual_sop\visual_sop_results_new.csv

@@ -1,0 +1,37 @@
+
+======================================================================
+  ROW 01 — Video Input & Ingestion
+  Started: 2026-08-26T04:41:46.572708+00:00
+  Environment: C:\Users\Admin\envs\ragbot\Scripts\python.exe (Python 3.11.0)
+======================================================================
+
+  File: const_01.mp4  SHA256: 2447299c4214af9f...
+    [✓] PyAV                 PASS — REAL TESTED             0.6488s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             1.0994s
+
+  File: controlled_synthetic_corrupt.mp4  SHA256: aedc1548e7263fea...
+    [✓] PyAV                 PASS — REAL TESTED             0.0555s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             0.235s
+
+  File: controlled_vfr_test.mp4  SHA256: ac6fe66c4a164dda...
+     [✓] PyAV                 PASS — REAL TESTED             0.0346s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             0.2387s
+  File: test_instructional_normal.mp4  SHA256: fb4fd2d08e7e01df...     [✓] PyAV                 PASS — REAL TESTED             0.0523s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             0.1099s
+  File: Ubiquitous-Robotic-Technology-for-Smart-Manufacturing-System-6018686.f1.ogv.240p.vp9.webm  SHA256: 1410a085f132f9a3...    [✓] PyAV                 PASS — REAL TESTED             0.0217s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             0.2381s
+
+  File: Working on machine.mp4  SHA256: 2447299c4214af9f..
+     [✓] PyAV                 PASS — REAL TESTED             0.0266s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             0.1307s
+  File: Working_on_machine_noisy.mp4  SHA256: 3d4303a67b790909...     [✓] PyAV                 PASS — REAL TESTED             0.0134s
+    [✗] TorchCodec           NOT TESTED — torchcodec native library unavailable 0s
+    [✓] FFmpeg CLI (subprocess) PASS — REAL TESTED             0.0989s   [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\01_video_input\video_input_results.json   [SAVED] d:\company_projects\RAG_Chatbot\RND\03_Evidence\all_test_results\01_video_input\video_input_results.csv
+
+  Done. 21 evaluations across 7 files.

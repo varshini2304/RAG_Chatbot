@@ -1,0 +1,41 @@
+{
+  "sop_title_en": "Precision Vertical Milling Machine - Standard Operating Procedure",
+  "sop_title_ja": "精密立型フライス盤 - 標準作業手順書",
+  "document_id": "SOP-MIL-2026-001",
+  "version": "1.0.0",
+  "generation_model": "groq:openai/gpt-oss-120b",
+  "governance_status": "APPROVED",
+  "approval_hash_sha256": "8f4c1e7a9b2d3e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_description_en": "Ensure the spindle is rotating clockwise at maximum 1800 RPM before engaging the workpiece.",
+      "step_description_ja": "ワークピースを切削する前に、主軸が時計回りに最大1800 RPMで回転していることを確認してください。",
+      "timestamp": "00:00:00 - 00:00:10",
+      "selected_frame": "OpenCV_ts_0.0s.jpg",
+      "source_references": [
+        "video_evidence: test_instructional_normal.mp4 (00:00:00)",
+        "document_evidence: milling_machine_operating_manual.pdf (Section 3.2, p1)"
+      ],
+      "safety_warnings": [
+        "Operating the spindle at speeds exceeding 1800 RPM is strictly prohibited."
+      ],
+      "traceability_status": "DUAL_GROUNDED_VERIFIED"
+    },
+    {
+      "step_number": 2,
+      "step_description_en": "Securely clamp the workpiece to the machine table before starting the cut.",
+      "step_description_ja": "切削を開始する前に、ワークピースを作業台に確実に固定してください。",
+      "timestamp": "00:01:15",
+      "selected_frame": "estimated_ts_75.0s",
+      "source_references": [
+        "video_evidence: test_instructional_normal.mp4 (00:01:15)",
+        "document_evidence: milling_machine_operating_manual.pdf (Section 4.2, p3)"
+      ],
+      "safety_warnings": [
+        "Lock vise clamp securely before starting the spindle."
+      ],
+      "traceability_status": "PARTIAL_TEXT_ONLY"
+    }
+  ]
+}

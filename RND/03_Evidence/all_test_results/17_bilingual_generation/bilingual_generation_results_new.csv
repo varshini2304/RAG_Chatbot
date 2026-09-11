@@ -1,0 +1,4 @@
+candidate,status,has_both_languages,fact_drift_detected,elapsed_sec,errors
+Direct Bilingual (gemini-2.5-flash),PARTIAL,False,False,10.23,
+EN-first then Translate (groq:openai/gpt-oss-120b),PASS — REAL TESTED,True,N/A,4.6034,
+EN-first + NLLB-200 Local MT (600M),PASS — REAL TESTED,True,N/A,39.0954,

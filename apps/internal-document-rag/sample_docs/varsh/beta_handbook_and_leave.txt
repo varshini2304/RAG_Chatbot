@@ -1,0 +1,39 @@
+# Vanguard AutoTech Corp — Internal Document Segment
+Document ID: OPER-VAT-2026-V8.0-PART
+Confidentiality: Highly Restricted Internal
+
+## 5. Employee Handbook
+This Operations Manual outlines the procedures and policies for all employees of Vanguard AutoTech Corp. All employees working within the Detroit Industrial Park campus must read, understand, and strictly follow these rules. Due to the high-risk nature of heavy manufacturing environments, adherence to safety procedures is mandatory.
+
+Vanguard's core values are: Safety First, Absolute Quality, Accountability, and Operational Discipline. All personnel must wear certified steel-toed boots, protective glasses, and high-visibility vests at all times on the manufacturing floor.
+
+
+
+## 6. Leave Policy
+**Policy Number:** #HR-PL-BETA-391. Vanguard AutoTech ensures that employees have regular rest periods to maintain safety and work performance.
+* **Annual Leave:** Salaried staff receive 18 days of paid Annual Leave per calendar year, accrued at 1.5 days per month. Unused annual leave cannot be carried over and expires on December 31st.
+* **Sick Leave:** Employees receive 8 days of Sick Leave per year. Sick leave lasting more than 2 consecutive days requires a medical certificate from a qualified industrial physician.
+* **Personal Leave:** Employees receive 4 days of Personal Leave per year for urgent personal business. Requests must be submitted at least 48 hours in advance.
+* **Leave Request Procedure:** Leave requests must be submitted through the internal Vanguard ERP system (`erp.vanguard.internal`) and require direct manager approval. For unplanned absences, employees must call the shift coordinator at ext 7900 by 6:00 AM on the day of their shift.
+
+
+
+## 7. Work From Home Policy
+Due to the on-site physical dependencies of heavy machinery operations, quality testing, and facility safety controls, Vanguard AutoTech Corp does not offer work-from-home or remote work options. All operational staff are required to be physically present at the Detroit Industrial campus. Only specific back-office administrative staff may receive limited remote work permissions (up to 1 day per week) with explicit written approval from the Chief Operations Officer.
+
+
+
+## 8. Office Timings
+Vanguard AutoTech operates on a strict three-shift schedule to maintain 24-hour manufacturing operations:
+1. **Shift A (Morning):** 6:00 AM to 2:30 PM EST.
+2. **Shift B (Afternoon):** 2:00 PM to 10:30 PM EST.
+3. **Shift C (Night):** 10:00 PM to 6:30 AM EST.
+Shift handovers occur during the 30-minute overlap periods. Administrative and engineering design offices operate from 8:00 AM to 5:00 PM EST.
+
+
+
+## 9. Dress Code
+All staff working on the manufacturing floor, design labs, or warehouse environments must wear safety-compliant wear: steel-toed boots (ANSI Z41 compliant), protective safety glasses (ANSI Z87.1), ear protection in designated zones, and company-provided fire-retardant uniforms. Loose clothing, jewelry, and long un-tied hair are strictly banned near active machinery. Administrative office staff must wear business casual attire (collared shirts, slacks, closed-toe leather shoes).
+
+
+

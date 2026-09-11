@@ -1,3 +1,0 @@
-candidate,status,fields_present,fields_required,traceability_ok,elapsed_sec,errors
-Multimodal LLM + Structured Schema (Gemini),FAIL — API Quota Exceeded (HTTP 429),0,7,False,0,Gemini API Quota Exceeded (HTTP 429)
-Structured LLM (Groq GPT-OSS 120B text-grounded),PASS — REAL TESTED,7,7,True,1.4141,

@@ -1,3 +1,0 @@
-candidate,status,chunk_count,embed_time_sec,error
-SentenceTransformers (BAAI/bge-m3) + ChromaDB,PASS,11,17.3886,
-BM25 only (rank-bm25),PASS,N/A,N/A,

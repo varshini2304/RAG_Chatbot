@@ -1,7 +1,0 @@
-file,language,candidate,status,n_annotations,mean_start_err_sec,mean_end_err_sec,acceptable_rate_pct,elapsed_sec
-test_instructional_normal.mp4,en,faster-whisper segment-level,PASS — REAL TESTED,7,1.2714,3.12,0.0,117.1176
-test_instructional_normal.mp4,en,faster-whisper word-level,PASS — REAL TESTED,7,0.3857,0.5743,57.1,117.3554
-test_instructional_normal.mp4,en,Heuristic interpolation,SYNTHETIC / SIMULATED,7,0.05,0.05,100.0,0.0002
-const_01.mp4,ja,faster-whisper segment-level,PASS — REAL TESTED,2,0.41,1.165,0.0,356.246
-const_01.mp4,ja,faster-whisper word-level,PASS — REAL TESTED,2,0.07,0.015,100.0,402.0876
-const_01.mp4,ja,Heuristic interpolation,SYNTHETIC / SIMULATED,2,0.0625,0.0625,100.0,0.0001

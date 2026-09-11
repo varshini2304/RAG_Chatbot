@@ -1,3 +1,0 @@
-candidate,status,note
-Programmatic HITL Audit Trail,PASS — REAL TESTED,Audit hash computed from record fields
-Structured Schema Review,PASS — REAL TESTED,Validates required fields only; no programmatic audit hash

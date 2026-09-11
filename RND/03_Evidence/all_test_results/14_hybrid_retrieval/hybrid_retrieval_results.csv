@@ -1,4 +1,0 @@
-question_id,query_type,expected_source,vector_correct,bm25_correct,hybrid_correct,vector_source,bm25_source,hybrid_source
-HQ-01,Exact Technical Term / Number (OCR),OpenCV_ts_0.0s.jpg (OCR),INCORRECT,CORRECT,CORRECT,test_instructional_normal.mp4 (Transcript),OpenCV_ts_0.0s.jpg (OCR),OpenCV_ts_0.0s.jpg (OCR)
-HQ-02,Semantic Action Query (Transcript + Doc),test_instructional_normal.mp4 (Transcript),CORRECT,CORRECT,CORRECT,test_instructional_normal.mp4 (Transcript),test_instructional_normal.mp4 (Transcript),test_instructional_normal.mp4 (Transcript)
-HQ-03,Japanese Multilingual Query (Transcript),const_01.mp4 (Transcript),CORRECT,CORRECT,CORRECT,const_01.mp4 (Transcript),const_01.mp4 (Transcript),const_01.mp4 (Transcript)
